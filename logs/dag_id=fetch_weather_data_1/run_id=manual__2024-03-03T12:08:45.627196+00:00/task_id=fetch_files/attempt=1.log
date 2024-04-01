@@ -1,0 +1,15 @@
+[2024-03-03T17:39:05.640+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data_1.fetch_files manual__2024-03-03T12:08:45.627196+00:00 [queued]>
+[2024-03-03T17:39:05.641+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data_1.fetch_files manual__2024-03-03T12:08:45.627196+00:00 [queued]>
+[2024-03-03T17:39:05.642+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-03T17:39:05.645+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): fetch_files> on 2024-03-03 12:08:45.627196+00:00
+[2024-03-03T17:39:05.648+0530] {standard_task_runner.py:60} INFO - Started process 1249 to run task
+[2024-03-03T17:39:05.651+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'fetch_weather_data_1', 'fetch_files', 'manual__2024-03-03T12:08:45.627196+00:00', '--job-id', '498', '--raw', '--subdir', 'DAGS_FOLDER/Data_fetcher.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpuogk_iaq']
+[2024-03-03T17:39:05.652+0530] {standard_task_runner.py:88} INFO - Job 498: Subtask fetch_files
+[2024-03-03T17:39:05.664+0530] {task_command.py:423} INFO - Running <TaskInstance: fetch_weather_data_1.fetch_files manual__2024-03-03T12:08:45.627196+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-03T17:39:05.682+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fetch_weather_data_1' AIRFLOW_CTX_TASK_ID='fetch_files' AIRFLOW_CTX_EXECUTION_DATE='2024-03-03T12:08:45.627196+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-03T12:08:45.627196+00:00'
+[2024-03-03T17:41:01.512+0530] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-03-03T17:41:01.523+0530] {process_utils.py:131} INFO - Sending 15 to group 1249. PIDs of all processes in the group: [1368, 1249]
+[2024-03-03T17:41:01.523+0530] {process_utils.py:86} INFO - Sending the signal 15 to group 1249
+[2024-03-03T17:41:01.525+0530] {taskinstance.py:2480} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-03-03T17:41:01.525+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=1368, status='terminated', started='17:40:58') (1368) terminated with exit code None
+[2024-03-03T17:41:01.542+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=1249, status='terminated', exitcode=0, started='17:39:05') (1249) terminated with exit code 0

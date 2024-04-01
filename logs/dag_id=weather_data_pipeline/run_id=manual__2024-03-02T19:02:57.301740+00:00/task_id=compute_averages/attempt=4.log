@@ -1,0 +1,28 @@
+[2024-03-03T00:45:51.403+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.compute_averages manual__2024-03-02T19:02:57.301740+00:00 [queued]>
+[2024-03-03T00:45:51.405+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.compute_averages manual__2024-03-02T19:02:57.301740+00:00 [queued]>
+[2024-03-03T00:45:51.406+0530] {taskinstance.py:2193} INFO - Starting attempt 4 of 4
+[2024-03-03T00:45:51.411+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): compute_averages> on 2024-03-02 19:02:57.301740+00:00
+[2024-03-03T00:45:51.415+0530] {standard_task_runner.py:60} INFO - Started process 28523 to run task
+[2024-03-03T00:45:51.417+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'compute_averages', 'manual__2024-03-02T19:02:57.301740+00:00', '--job-id', '279', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpurxw4noi']
+[2024-03-03T00:45:51.418+0530] {standard_task_runner.py:88} INFO - Job 279: Subtask compute_averages
+[2024-03-03T00:45:51.433+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.compute_averages manual__2024-03-02T19:02:57.301740+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-03T00:45:51.454+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='compute_averages' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T19:02:57.301740+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T19:02:57.301740+00:00'
+[2024-03-03T00:45:51.454+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: compute_monthly_averages() missing 1 required positional argument: 'data'
+[2024-03-03T00:45:51.457+0530] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=weather_data_pipeline, task_id=compute_averages, execution_date=20240302T190257, start_date=20240302T191551, end_date=20240302T191551
+[2024-03-03T00:45:51.460+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 279 for task compute_averages (compute_monthly_averages() missing 1 required positional argument: 'data'; 28523)
+[2024-03-03T00:45:51.478+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-03T00:45:51.486+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

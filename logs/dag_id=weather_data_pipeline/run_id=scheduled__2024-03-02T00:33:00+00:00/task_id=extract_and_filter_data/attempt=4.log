@@ -1,0 +1,39 @@
+[2024-03-03T10:08:55.712+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data scheduled__2024-03-02T00:33:00+00:00 [queued]>
+[2024-03-03T10:08:55.714+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data scheduled__2024-03-02T00:33:00+00:00 [queued]>
+[2024-03-03T10:08:55.714+0530] {taskinstance.py:2193} INFO - Starting attempt 4 of 5
+[2024-03-03T10:08:55.718+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_and_filter_data> on 2024-03-02 00:33:00+00:00
+[2024-03-03T10:08:55.721+0530] {standard_task_runner.py:60} INFO - Started process 2505 to run task
+[2024-03-03T10:08:55.724+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'extract_and_filter_data', 'scheduled__2024-03-02T00:33:00+00:00', '--job-id', '455', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmp5_f2vin7']
+[2024-03-03T10:08:55.724+0530] {standard_task_runner.py:88} INFO - Job 455: Subtask extract_and_filter_data
+[2024-03-03T10:08:55.741+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.extract_and_filter_data scheduled__2024-03-02T00:33:00+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-03T10:08:55.757+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_and_filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T00:33:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-02T00:33:00+00:00'
+[2024-03-03T10:08:55.758+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-03T10:08:55.845+0530] {translations.py:712} INFO - ==================== <function annotate_downstream_side_inputs at 0x136b8e660> ====================
+[2024-03-03T10:08:55.845+0530] {translations.py:712} INFO - ==================== <function fix_side_input_pcoll_coders at 0x136b8e7a0> ====================
+[2024-03-03T10:08:55.845+0530] {translations.py:712} INFO - ==================== <function pack_combiners at 0x136b8ed40> ====================
+[2024-03-03T10:08:55.845+0530] {translations.py:712} INFO - ==================== <function lift_combiners at 0x136b8ede0> ====================
+[2024-03-03T10:08:55.846+0530] {translations.py:712} INFO - ==================== <function expand_sdf at 0x136b8efc0> ====================
+[2024-03-03T10:08:55.846+0530] {translations.py:712} INFO - ==================== <function expand_gbk at 0x136b8f060> ====================
+[2024-03-03T10:08:55.846+0530] {translations.py:712} INFO - ==================== <function sink_flattens at 0x136b8f1a0> ====================
+[2024-03-03T10:08:55.846+0530] {translations.py:712} INFO - ==================== <function greedily_fuse at 0x136b8f240> ====================
+[2024-03-03T10:08:55.846+0530] {translations.py:712} INFO - ==================== <function read_to_impulse at 0x136b8f2e0> ====================
+[2024-03-03T10:08:55.846+0530] {translations.py:712} INFO - ==================== <function impulse_to_input at 0x136b8f380> ====================
+[2024-03-03T10:08:55.846+0530] {translations.py:712} INFO - ==================== <function sort_stages at 0x136b8f600> ====================
+[2024-03-03T10:08:55.846+0530] {translations.py:712} INFO - ==================== <function add_impulse_to_dangling_transforms at 0x136b8f740> ====================
+[2024-03-03T10:08:55.847+0530] {translations.py:712} INFO - ==================== <function setup_timer_mapping at 0x136b8f560> ====================
+[2024-03-03T10:08:55.847+0530] {translations.py:712} INFO - ==================== <function populate_data_channel_coders at 0x136b8f6a0> ====================
+[2024-03-03T10:08:55.848+0530] {statecache.py:234} INFO - Creating state cache with size 104857600
+[2024-03-03T10:08:55.848+0530] {worker_handlers.py:922} INFO - Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x136c51690> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+[2024-03-03T10:08:56.099+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T10:08:56.505+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10,17,23) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T10:08:56.569+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10,12) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T10:08:56.688+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10,17,21,23) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T10:08:56.746+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T10:08:56.828+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T10:08:56.983+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,10,17,18,22,23) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T10:08:57.056+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T10:08:57.382+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10,17) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T10:08:57.482+0530] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-03T10:08:57.486+0530] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=weather_data_pipeline, task_id=extract_and_filter_data, execution_date=20240302T003300, start_date=20240303T043855, end_date=20240303T043857
+[2024-03-03T10:08:57.531+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-03T10:08:57.539+0530] {taskinstance.py:3309} INFO - 1 downstream tasks scheduled from follow-on schedule check

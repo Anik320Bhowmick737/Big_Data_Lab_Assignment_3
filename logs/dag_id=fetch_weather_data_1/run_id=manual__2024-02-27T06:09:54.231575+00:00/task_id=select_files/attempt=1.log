@@ -1,0 +1,14 @@
+[2024-02-27T11:40:08.740+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data_1.select_files manual__2024-02-27T06:09:54.231575+00:00 [queued]>
+[2024-02-27T11:40:08.742+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data_1.select_files manual__2024-02-27T06:09:54.231575+00:00 [queued]>
+[2024-02-27T11:40:08.742+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-02-27T11:40:08.746+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): select_files> on 2024-02-27 06:09:54.231575+00:00
+[2024-02-27T11:40:08.748+0530] {standard_task_runner.py:60} INFO - Started process 4668 to run task
+[2024-02-27T11:40:08.750+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'fetch_weather_data_1', 'select_files', 'manual__2024-02-27T06:09:54.231575+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/Data_fetcher.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpp4uswrff']
+[2024-02-27T11:40:08.751+0530] {standard_task_runner.py:88} INFO - Job 73: Subtask select_files
+[2024-02-27T11:40:08.762+0530] {task_command.py:423} INFO - Running <TaskInstance: fetch_weather_data_1.select_files manual__2024-02-27T06:09:54.231575+00:00 [running]> on host aniks-macbook-air.local
+[2024-02-27T11:40:08.779+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fetch_weather_data_1' AIRFLOW_CTX_TASK_ID='select_files' AIRFLOW_CTX_EXECUTION_DATE='2024-02-27T06:09:54.231575+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-27T06:09:54.231575+00:00'
+[2024-02-27T11:40:09.660+0530] {Data_fetcher.py:41} INFO - Number of CSV files found: 12708
+[2024-02-27T11:40:09.660+0530] {python.py:202} INFO - Done. Returned value was: ['72597694285.csv', '32010099999.csv', '72209153940.csv', '87163099999.csv', '02651099999.csv', '72297023129.csv', '99999904139.csv', '67117099999.csv', '94755099999.csv', '86692099999.csv', '31442099999.csv', '07156099999.csv', '48481099999.csv', '78730099999.csv', '71374099999.csv']
+[2024-02-27T11:40:09.666+0530] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=fetch_weather_data_1, task_id=select_files, execution_date=20240227T060954, start_date=20240227T061008, end_date=20240227T061009
+[2024-02-27T11:40:09.709+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-27T11:40:09.714+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,14 @@
+[2024-03-08T00:27:20.581+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.Comb_data_loc scheduled__2024-03-03T00:33:00+00:00 [queued]>
+[2024-03-08T00:27:20.583+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.Comb_data_loc scheduled__2024-03-03T00:33:00+00:00 [queued]>
+[2024-03-08T00:27:20.583+0530] {taskinstance.py:2193} INFO - Starting attempt 3 of 4
+[2024-03-08T00:27:20.587+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): Comb_data_loc> on 2024-03-03 00:33:00+00:00
+[2024-03-08T00:27:20.591+0530] {standard_task_runner.py:60} INFO - Started process 3195 to run task
+[2024-03-08T00:27:20.594+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'Comb_data_loc', 'scheduled__2024-03-03T00:33:00+00:00', '--job-id', '574', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpyqww35t0']
+[2024-03-08T00:27:20.594+0530] {standard_task_runner.py:88} INFO - Job 574: Subtask Comb_data_loc
+[2024-03-08T00:27:20.610+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.Comb_data_loc scheduled__2024-03-03T00:33:00+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-08T00:27:20.625+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='Comb_data_loc' AIRFLOW_CTX_EXECUTION_DATE='2024-03-03T00:33:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-03T00:33:00+00:00'
+[2024-03-08T00:27:20.787+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:122 FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+[2024-03-08T00:27:21.071+0530] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-08T00:27:21.073+0530] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=weather_data_pipeline, task_id=Comb_data_loc, execution_date=20240303T003300, start_date=20240307T185720, end_date=20240307T185721
+[2024-03-08T00:27:21.105+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-08T00:27:21.112+0530] {taskinstance.py:3309} INFO - 1 downstream tasks scheduled from follow-on schedule check

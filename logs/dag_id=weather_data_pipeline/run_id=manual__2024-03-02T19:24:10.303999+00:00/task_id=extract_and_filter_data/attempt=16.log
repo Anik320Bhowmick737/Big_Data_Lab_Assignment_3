@@ -1,0 +1,204 @@
+[2024-03-03T02:14:27.123+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T19:24:10.303999+00:00 [queued]>
+[2024-03-03T02:14:27.125+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T19:24:10.303999+00:00 [queued]>
+[2024-03-03T02:14:27.125+0530] {taskinstance.py:2193} INFO - Starting attempt 16 of 17
+[2024-03-03T02:14:27.131+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_and_filter_data> on 2024-03-02 19:24:10.303999+00:00
+[2024-03-03T02:14:27.135+0530] {standard_task_runner.py:60} INFO - Started process 34486 to run task
+[2024-03-03T02:14:27.139+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'extract_and_filter_data', 'manual__2024-03-02T19:24:10.303999+00:00', '--job-id', '377', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmphk6sncmd']
+[2024-03-03T02:14:27.140+0530] {standard_task_runner.py:88} INFO - Job 377: Subtask extract_and_filter_data
+[2024-03-03T02:14:27.168+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T19:24:10.303999+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-03T02:14:27.188+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_and_filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T19:24:10.303999+00:00' AIRFLOW_CTX_TRY_NUMBER='16' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T19:24:10.303999+00:00'
+[2024-03-03T02:14:27.190+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-03T02:14:27.285+0530] {translations.py:712} INFO - ==================== <function annotate_downstream_side_inputs at 0x12e396de0> ====================
+[2024-03-03T02:14:27.286+0530] {translations.py:712} INFO - ==================== <function fix_side_input_pcoll_coders at 0x12e396f20> ====================
+[2024-03-03T02:14:27.286+0530] {translations.py:712} INFO - ==================== <function pack_combiners at 0x12e3974c0> ====================
+[2024-03-03T02:14:27.286+0530] {translations.py:712} INFO - ==================== <function lift_combiners at 0x12e397560> ====================
+[2024-03-03T02:14:27.286+0530] {translations.py:712} INFO - ==================== <function expand_sdf at 0x12e397740> ====================
+[2024-03-03T02:14:27.286+0530] {translations.py:712} INFO - ==================== <function expand_gbk at 0x12e3977e0> ====================
+[2024-03-03T02:14:27.286+0530] {translations.py:712} INFO - ==================== <function sink_flattens at 0x12e397920> ====================
+[2024-03-03T02:14:27.286+0530] {translations.py:712} INFO - ==================== <function greedily_fuse at 0x12e3979c0> ====================
+[2024-03-03T02:14:27.287+0530] {translations.py:712} INFO - ==================== <function read_to_impulse at 0x12e397a60> ====================
+[2024-03-03T02:14:27.287+0530] {translations.py:712} INFO - ==================== <function impulse_to_input at 0x12e397b00> ====================
+[2024-03-03T02:14:27.287+0530] {translations.py:712} INFO - ==================== <function sort_stages at 0x12e397d80> ====================
+[2024-03-03T02:14:27.287+0530] {translations.py:712} INFO - ==================== <function add_impulse_to_dangling_transforms at 0x12e397ec0> ====================
+[2024-03-03T02:14:27.287+0530] {translations.py:712} INFO - ==================== <function setup_timer_mapping at 0x12e397ce0> ====================
+[2024-03-03T02:14:27.287+0530] {translations.py:712} INFO - ==================== <function populate_data_channel_coders at 0x12e397e20> ====================
+[2024-03-03T02:14:27.288+0530] {statecache.py:234} INFO - Creating state cache with size 104857600
+[2024-03-03T02:14:27.288+0530] {worker_handlers.py:922} INFO - Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x12e47b7d0> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+[2024-03-03T02:14:27.320+0530] {bundle_processor.py:237} ERROR - Object of type DataFrame is not JSON serializable [while running 'SerializeToJson']
+Traceback (most recent call last):
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 637, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 1963, in <lambda>
+    wrapper = lambda x: [fn(x)]
+                         ^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 64, in <lambda>
+    | 'SerializeToJson' >> beam.Map(lambda x:json.dumps(x)))
+                                             ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DataFrame is not JSON serializable
+[2024-03-03T02:14:27.327+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 637, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 1963, in <lambda>
+    wrapper = lambda x: [fn(x)]
+                         ^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 64, in <lambda>
+    | 'SerializeToJson' >> beam.Map(lambda x:json.dumps(x)))
+                                             ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DataFrame is not JSON serializable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 58, in extract_and_filter
+    with beam.Pipeline() as p:
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/pipeline.py", line 612, in __exit__
+    self.result = self.run()
+                  ^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/pipeline.py", line 586, in run
+    return self.runner.run_pipeline(self, self._options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/direct/direct_runner.py", line 128, in run_pipeline
+    return runner.run_pipeline(pipeline, options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 202, in run_pipeline
+    self._latest_run_result = self.run_via_runner_api(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 224, in run_via_runner_api
+    return self.run_stages(stage_context, stages)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 466, in run_stages
+    bundle_results = self._execute_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 794, in _execute_bundle
+    self._run_bundle(
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1031, in _run_bundle
+    result, splits = bundle_manager.process_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1367, in process_bundle
+    result_future = self._worker_handler.control_conn.push(process_bundle_req)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/worker_handlers.py", line 384, in push
+    response = self.worker.do_instruction(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/sdk_worker.py", line 650, in do_instruction
+    return getattr(self, request_type)(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/sdk_worker.py", line 688, in process_bundle
+    bundle_processor.process_bundle(instruction_id))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/bundle_processor.py", line 1113, in process_bundle
+    input_op_by_transform_id[element.transform_id].process_encoded(
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/bundle_processor.py", line 237, in process_encoded
+    self.output(decoded_value)
+  File "apache_beam/runners/worker/operations.py", line 570, in apache_beam.runners.worker.operations.Operation.output
+  File "apache_beam/runners/worker/operations.py", line 572, in apache_beam.runners.worker.operations.Operation.output
+  File "apache_beam/runners/worker/operations.py", line 263, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1547, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 637, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 1963, in <lambda>
+    wrapper = lambda x: [fn(x)]
+                         ^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 64, in <lambda>
+    | 'SerializeToJson' >> beam.Map(lambda x:json.dumps(x)))
+                                             ^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DataFrame is not JSON serializable [while running 'SerializeToJson']
+[2024-03-03T02:14:27.333+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_pipeline, task_id=extract_and_filter_data, execution_date=20240302T192410, start_date=20240302T204427, end_date=20240302T204427
+[2024-03-03T02:14:27.337+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 377 for task extract_and_filter_data (Object of type DataFrame is not JSON serializable [while running 'SerializeToJson']; 34486)
+[2024-03-03T02:14:27.372+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-03T02:14:27.380+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

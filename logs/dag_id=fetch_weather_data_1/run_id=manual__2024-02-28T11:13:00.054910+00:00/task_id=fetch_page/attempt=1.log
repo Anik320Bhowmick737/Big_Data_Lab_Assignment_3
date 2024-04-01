@@ -1,0 +1,19 @@
+[2024-02-28T16:43:02.503+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data_1.fetch_page manual__2024-02-28T11:13:00.054910+00:00 [queued]>
+[2024-02-28T16:43:02.504+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data_1.fetch_page manual__2024-02-28T11:13:00.054910+00:00 [queued]>
+[2024-02-28T16:43:02.504+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-02-28T16:43:02.508+0530] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): fetch_page> on 2024-02-28 11:13:00.054910+00:00
+[2024-02-28T16:43:02.510+0530] {standard_task_runner.py:60} INFO - Started process 8977 to run task
+[2024-02-28T16:43:02.513+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'fetch_weather_data_1', 'fetch_page', 'manual__2024-02-28T11:13:00.054910+00:00', '--job-id', '119', '--raw', '--subdir', 'DAGS_FOLDER/Data_fetcher.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpy60voweu']
+[2024-02-28T16:43:02.513+0530] {standard_task_runner.py:88} INFO - Job 119: Subtask fetch_page
+[2024-02-28T16:43:02.525+0530] {task_command.py:423} INFO - Running <TaskInstance: fetch_weather_data_1.fetch_page manual__2024-02-28T11:13:00.054910+00:00 [running]> on host aniks-macbook-air.local
+[2024-02-28T16:43:02.546+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fetch_weather_data_1' AIRFLOW_CTX_TASK_ID='fetch_page' AIRFLOW_CTX_EXECUTION_DATE='2024-02-28T11:13:00.054910+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-28T11:13:00.054910+00:00'
+[2024-02-28T16:43:02.546+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T
+[2024-02-28T16:43:02.547+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'curl -o /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/Data/2024_data.html https://www.ncei.noaa.gov/data/local-climatological-data/access/2024/']
+[2024-02-28T16:43:02.550+0530] {subprocess.py:86} INFO - Output:
+[2024-02-28T16:43:02.558+0530] {subprocess.py:93} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2024-02-28T16:43:02.558+0530] {subprocess.py:93} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2024-02-28T16:43:11.676+0530] {subprocess.py:93} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100 77174    0 77174    0     0  27970      0 --:--:--  0:00:02 --:--:-- 27961100  199k    0  199k    0     0  57137      0 --:--:--  0:00:03 --:--:-- 57132100  390k    0  390k    0     0  84014      0 --:--:--  0:00:04 --:--:-- 83999100  559k    0  559k    0     0    98k      0 --:--:--  0:00:05 --:--:--  116k100  753k    0  753k    0     0   114k      0 --:--:--  0:00:06 --:--:--  161k100 1093k    0 1093k    0     0   141k      0 --:--:--  0:00:07 --:--:--  204k100 1447k    0 1447k    0     0   168k      0 --:--:--  0:00:08 --:--:--  250k100 1825k    0 1825k    0     0   200k      0 --:--:--  0:00:09 --:--:--  329k
+[2024-02-28T16:43:11.679+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-02-28T16:43:11.690+0530] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=fetch_weather_data_1, task_id=fetch_page, execution_date=20240228T111300, start_date=20240228T111302, end_date=20240228T111311
+[2024-02-28T16:43:11.715+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-02-28T16:43:11.726+0530] {taskinstance.py:3309} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,30 @@
+[2024-03-08T00:27:16.992+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.compute_averages scheduled__2024-03-03T00:33:00+00:00 [queued]>
+[2024-03-08T00:27:16.994+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.compute_averages scheduled__2024-03-03T00:33:00+00:00 [queued]>
+[2024-03-08T00:27:16.994+0530] {taskinstance.py:2193} INFO - Starting attempt 4 of 5
+[2024-03-08T00:27:16.997+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): compute_averages> on 2024-03-03 00:33:00+00:00
+[2024-03-08T00:27:17.002+0530] {standard_task_runner.py:60} INFO - Started process 3179 to run task
+[2024-03-08T00:27:17.004+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'compute_averages', 'scheduled__2024-03-03T00:33:00+00:00', '--job-id', '573', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpfov0ravw']
+[2024-03-08T00:27:17.005+0530] {standard_task_runner.py:88} INFO - Job 573: Subtask compute_averages
+[2024-03-08T00:27:17.021+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.compute_averages scheduled__2024-03-03T00:33:00+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-08T00:27:17.040+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='compute_averages' AIRFLOW_CTX_EXECUTION_DATE='2024-03-03T00:33:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-03T00:33:00+00:00'
+[2024-03-08T00:27:17.041+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-08T00:27:17.098+0530] {translations.py:712} INFO - ==================== <function annotate_downstream_side_inputs at 0x1699eee80> ====================
+[2024-03-08T00:27:17.098+0530] {translations.py:712} INFO - ==================== <function fix_side_input_pcoll_coders at 0x1699eefc0> ====================
+[2024-03-08T00:27:17.098+0530] {translations.py:712} INFO - ==================== <function pack_combiners at 0x1699ef560> ====================
+[2024-03-08T00:27:17.099+0530] {translations.py:712} INFO - ==================== <function lift_combiners at 0x1699ef600> ====================
+[2024-03-08T00:27:17.099+0530] {translations.py:712} INFO - ==================== <function expand_sdf at 0x1699ef7e0> ====================
+[2024-03-08T00:27:17.099+0530] {translations.py:712} INFO - ==================== <function expand_gbk at 0x1699ef880> ====================
+[2024-03-08T00:27:17.099+0530] {translations.py:712} INFO - ==================== <function sink_flattens at 0x1699ef9c0> ====================
+[2024-03-08T00:27:17.099+0530] {translations.py:712} INFO - ==================== <function greedily_fuse at 0x1699efa60> ====================
+[2024-03-08T00:27:17.099+0530] {translations.py:712} INFO - ==================== <function read_to_impulse at 0x1699efb00> ====================
+[2024-03-08T00:27:17.100+0530] {translations.py:712} INFO - ==================== <function impulse_to_input at 0x1699efba0> ====================
+[2024-03-08T00:27:17.100+0530] {translations.py:712} INFO - ==================== <function sort_stages at 0x1699efe20> ====================
+[2024-03-08T00:27:17.100+0530] {translations.py:712} INFO - ==================== <function add_impulse_to_dangling_transforms at 0x1699eff60> ====================
+[2024-03-08T00:27:17.100+0530] {translations.py:712} INFO - ==================== <function setup_timer_mapping at 0x1699efd80> ====================
+[2024-03-08T00:27:17.100+0530] {translations.py:712} INFO - ==================== <function populate_data_channel_coders at 0x1699efec0> ====================
+[2024-03-08T00:27:17.101+0530] {statecache.py:234} INFO - Creating state cache with size 104857600
+[2024-03-08T00:27:17.101+0530] {worker_handlers.py:922} INFO - Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x1686e6790> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+[2024-03-08T00:27:18.133+0530] {python.py:202} INFO - Done. Returned value was: None
+[2024-03-08T00:27:18.137+0530] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=weather_data_pipeline, task_id=compute_averages, execution_date=20240303T003300, start_date=20240307T185716, end_date=20240307T185718
+[2024-03-08T00:27:18.142+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-08T00:27:18.150+0530] {taskinstance.py:3309} INFO - 1 downstream tasks scheduled from follow-on schedule check

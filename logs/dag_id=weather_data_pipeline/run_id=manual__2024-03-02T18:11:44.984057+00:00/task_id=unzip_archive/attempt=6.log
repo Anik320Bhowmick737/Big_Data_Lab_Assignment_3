@@ -1,0 +1,37 @@
+[2024-03-03T00:22:56.065+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.unzip_archive manual__2024-03-02T18:11:44.984057+00:00 [queued]>
+[2024-03-03T00:22:56.067+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.unzip_archive manual__2024-03-02T18:11:44.984057+00:00 [queued]>
+[2024-03-03T00:22:56.067+0530] {taskinstance.py:2193} INFO - Starting attempt 6 of 7
+[2024-03-03T00:22:56.071+0530] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): unzip_archive> on 2024-03-02 18:11:44.984057+00:00
+[2024-03-03T00:22:56.074+0530] {standard_task_runner.py:60} INFO - Started process 26852 to run task
+[2024-03-03T00:22:56.076+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'unzip_archive', 'manual__2024-03-02T18:11:44.984057+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpbfiryrgc']
+[2024-03-03T00:22:56.077+0530] {standard_task_runner.py:88} INFO - Job 260: Subtask unzip_archive
+[2024-03-03T00:22:56.103+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.unzip_archive manual__2024-03-02T18:11:44.984057+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-03T00:22:56.121+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='unzip_archive' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T18:11:44.984057+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T18:11:44.984057+00:00'
+[2024-03-03T00:22:56.122+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T
+[2024-03-03T00:22:56.123+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'mkdir -p /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data && unzip -o /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data.zip -d /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/']
+[2024-03-03T00:22:56.126+0530] {subprocess.py:86} INFO - Output:
+[2024-03-03T00:22:56.134+0530] {subprocess.py:93} INFO - Archive:  /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data.zip
+[2024-03-03T00:22:56.147+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/94609099999.csv
+[2024-03-03T00:22:56.152+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/71061099999.csv
+[2024-03-03T00:22:56.187+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/99999994074.csv
+[2024-03-03T00:22:56.194+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/72286699999.csv
+[2024-03-03T00:22:56.203+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/91218041414.csv
+[2024-03-03T00:22:56.207+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/15206099999.csv
+[2024-03-03T00:22:56.210+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/65010099999.csv
+[2024-03-03T00:22:56.212+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/51334099999.csv
+[2024-03-03T00:22:56.224+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/01010099999.csv
+[2024-03-03T00:22:56.232+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/80144099999.csv
+[2024-03-03T00:22:56.245+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/72656804961.csv
+[2024-03-03T00:22:56.253+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/94972099999.csv
+[2024-03-03T00:22:56.259+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/99772999999.csv
+[2024-03-03T00:22:56.263+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/12100099999.csv
+[2024-03-03T00:22:56.287+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/72038400124.csv
+[2024-03-03T00:22:56.293+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/71401099999.csv
+[2024-03-03T00:22:56.335+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/99999992826.csv
+[2024-03-03T00:22:56.343+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/03140099999.csv
+[2024-03-03T00:22:56.345+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/31873099999.csv
+[2024-03-03T00:22:56.349+0530] {subprocess.py:93} INFO -  extracting: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/17030099999.csv
+[2024-03-03T00:22:56.349+0530] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-03-03T00:22:56.355+0530] {taskinstance.py:1149} INFO - Marking task as SUCCESS. dag_id=weather_data_pipeline, task_id=unzip_archive, execution_date=20240302T181144, start_date=20240302T185256, end_date=20240302T185256
+[2024-03-03T00:22:56.362+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2024-03-03T00:22:56.370+0530] {taskinstance.py:3309} INFO - 1 downstream tasks scheduled from follow-on schedule check

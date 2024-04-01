@@ -1,0 +1,30 @@
+[2024-02-28T16:33:50.641+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data_1.move_zip_file manual__2024-02-28T10:56:45.185933+00:00 [queued]>
+[2024-02-28T16:33:50.643+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data_1.move_zip_file manual__2024-02-28T10:56:45.185933+00:00 [queued]>
+[2024-02-28T16:33:50.643+0530] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-02-28T16:33:50.647+0530] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): move_zip_file> on 2024-02-28 10:56:45.185933+00:00
+[2024-02-28T16:33:50.649+0530] {standard_task_runner.py:60} INFO - Started process 8284 to run task
+[2024-02-28T16:33:50.652+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'fetch_weather_data_1', 'move_zip_file', 'manual__2024-02-28T10:56:45.185933+00:00', '--job-id', '110', '--raw', '--subdir', 'DAGS_FOLDER/Data_fetcher.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpm7ei_dz6']
+[2024-02-28T16:33:50.652+0530] {standard_task_runner.py:88} INFO - Job 110: Subtask move_zip_file
+[2024-02-28T16:33:50.669+0530] {task_command.py:423} INFO - Running <TaskInstance: fetch_weather_data_1.move_zip_file manual__2024-02-28T10:56:45.185933+00:00 [running]> on host aniks-macbook-air.local
+[2024-02-28T16:33:50.687+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fetch_weather_data_1' AIRFLOW_CTX_TASK_ID='move_zip_file' AIRFLOW_CTX_EXECUTION_DATE='2024-02-28T10:56:45.185933+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-28T10:56:45.185933+00:00'
+[2024-02-28T16:33:50.688+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T
+[2024-02-28T16:33:50.688+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'mv /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/Data/2024_data.zip ']
+[2024-02-28T16:33:50.692+0530] {subprocess.py:86} INFO - Output:
+[2024-02-28T16:33:50.700+0530] {subprocess.py:93} INFO - usage: mv [-f | -i | -n] [-hv] source target
+[2024-02-28T16:33:50.700+0530] {subprocess.py:93} INFO -        mv [-f | -i | -n] [-v] source ... directory
+[2024-02-28T16:33:50.700+0530] {subprocess.py:97} INFO - Command exited with return code 64
+[2024-02-28T16:33:50.703+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 64.
+[2024-02-28T16:33:50.704+0530] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=fetch_weather_data_1, task_id=move_zip_file, execution_date=20240228T105645, start_date=20240228T110350, end_date=20240228T110350
+[2024-02-28T16:33:50.708+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 110 for task move_zip_file (Bash command failed. The command returned a non-zero exit code 64.; 8284)
+[2024-02-28T16:33:50.711+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-28T16:33:50.716+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

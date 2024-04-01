@@ -1,0 +1,34 @@
+[2024-03-02T22:12:20.258+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T16:37:07.665886+00:00 [queued]>
+[2024-03-02T22:12:20.261+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T16:37:07.665886+00:00 [queued]>
+[2024-03-02T22:12:20.261+0530] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-03-02T22:12:20.266+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_and_filter_data> on 2024-03-02 16:37:07.665886+00:00
+[2024-03-02T22:12:20.271+0530] {standard_task_runner.py:60} INFO - Started process 19353 to run task
+[2024-03-02T22:12:20.274+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'extract_and_filter_data', 'manual__2024-03-02T16:37:07.665886+00:00', '--job-id', '212', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmphfmsd390']
+[2024-03-02T22:12:20.275+0530] {standard_task_runner.py:88} INFO - Job 212: Subtask extract_and_filter_data
+[2024-03-02T22:12:20.290+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T16:37:07.665886+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-02T22:12:20.314+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_and_filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T16:37:07.665886+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T16:37:07.665886+00:00'
+[2024-03-02T22:12:20.316+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-02T22:12:20.319+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 48, in extract_and_filter
+    csv_files = p | 'MatchFiles' >> beam.Create(file_pattern) | 'FindCSVFiles' >> beam.Filter(lambda file_path: file_path.endswith('.csv'))
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 3718, in __init__
+    raise TypeError(
+TypeError: PTransform Create: Refusing to treat string as an iterable. (string='/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/')
+[2024-03-02T22:12:20.321+0530] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=weather_data_pipeline, task_id=extract_and_filter_data, execution_date=20240302T163707, start_date=20240302T164220, end_date=20240302T164220
+[2024-03-02T22:12:20.325+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 212 for task extract_and_filter_data (PTransform Create: Refusing to treat string as an iterable. (string='/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data/'); 19353)
+[2024-03-02T22:12:20.332+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-02T22:12:20.339+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

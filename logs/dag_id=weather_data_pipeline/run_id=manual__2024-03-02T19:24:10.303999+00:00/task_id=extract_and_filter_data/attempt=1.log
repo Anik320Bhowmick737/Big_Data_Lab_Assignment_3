@@ -1,0 +1,50 @@
+[2024-03-03T00:54:19.803+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T19:24:10.303999+00:00 [queued]>
+[2024-03-03T00:54:19.804+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T19:24:10.303999+00:00 [queued]>
+[2024-03-03T00:54:19.804+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-03T00:54:19.808+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_and_filter_data> on 2024-03-02 19:24:10.303999+00:00
+[2024-03-03T00:54:19.812+0530] {standard_task_runner.py:60} INFO - Started process 28826 to run task
+[2024-03-03T00:54:19.814+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'extract_and_filter_data', 'manual__2024-03-02T19:24:10.303999+00:00', '--job-id', '285', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpwz5sl4a0']
+[2024-03-03T00:54:19.815+0530] {standard_task_runner.py:88} INFO - Job 285: Subtask extract_and_filter_data
+[2024-03-03T00:54:19.841+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T19:24:10.303999+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-03T00:54:19.858+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_and_filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T19:24:10.303999+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T19:24:10.303999+00:00'
+[2024-03-03T00:54:19.860+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-03T00:54:19.952+0530] {translations.py:712} INFO - ==================== <function annotate_downstream_side_inputs at 0x13bf8ec00> ====================
+[2024-03-03T00:54:19.953+0530] {translations.py:712} INFO - ==================== <function fix_side_input_pcoll_coders at 0x13bf8ed40> ====================
+[2024-03-03T00:54:19.953+0530] {translations.py:712} INFO - ==================== <function pack_combiners at 0x13bf8f2e0> ====================
+[2024-03-03T00:54:19.953+0530] {translations.py:712} INFO - ==================== <function lift_combiners at 0x13bf8f380> ====================
+[2024-03-03T00:54:19.953+0530] {translations.py:712} INFO - ==================== <function expand_sdf at 0x13bf8f560> ====================
+[2024-03-03T00:54:19.953+0530] {translations.py:712} INFO - ==================== <function expand_gbk at 0x13bf8f600> ====================
+[2024-03-03T00:54:19.953+0530] {translations.py:712} INFO - ==================== <function sink_flattens at 0x13bf8f740> ====================
+[2024-03-03T00:54:19.953+0530] {translations.py:712} INFO - ==================== <function greedily_fuse at 0x13bf8f7e0> ====================
+[2024-03-03T00:54:19.954+0530] {translations.py:712} INFO - ==================== <function read_to_impulse at 0x13bf8f880> ====================
+[2024-03-03T00:54:19.954+0530] {translations.py:712} INFO - ==================== <function impulse_to_input at 0x13bf8f920> ====================
+[2024-03-03T00:54:19.954+0530] {translations.py:712} INFO - ==================== <function sort_stages at 0x13bf8fba0> ====================
+[2024-03-03T00:54:19.954+0530] {translations.py:712} INFO - ==================== <function add_impulse_to_dangling_transforms at 0x13bf8fce0> ====================
+[2024-03-03T00:54:19.954+0530] {translations.py:712} INFO - ==================== <function setup_timer_mapping at 0x13bf8fb00> ====================
+[2024-03-03T00:54:19.954+0530] {translations.py:712} INFO - ==================== <function populate_data_channel_coders at 0x13bf8fc40> ====================
+[2024-03-03T00:54:19.955+0530] {statecache.py:234} INFO - Creating state cache with size 104857600
+[2024-03-03T00:54:19.955+0530] {worker_handlers.py:922} INFO - Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x13c2df090> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+[2024-03-03T00:54:20.271+0530] {python.py:202} INFO - Done. Returned value was: {'pipeline': <apache_beam.pipeline.Pipeline object at 0x13bd9e590>, 'tag': None, 'element_type': Any, 'producer': AppliedPTransform(Map(<lambda at Data_analysis.py:63>), ParDo), 'is_bounded': True, 'requires_deterministic_key_coder': None, '_windowing': Windowing(<apache_beam.transforms.window.GlobalWindows object at 0x139371610>, DefaultTrigger(), 1, 1, None)}
+[2024-03-03T00:54:20.272+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 451, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session)
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3010, in xcom_push
+    XCom.set(
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/xcom.py", line 247, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/xcom.py", line 660, in serialize_value
+    return pickle.dumps(value)
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't pickle local object 'Create.expand.<locals>.<lambda>'
+[2024-03-03T00:54:20.275+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_pipeline, task_id=extract_and_filter_data, execution_date=20240302T192410, start_date=20240302T192419, end_date=20240302T192420
+[2024-03-03T00:54:20.278+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 285 for task extract_and_filter_data (Can't pickle local object 'Create.expand.<locals>.<lambda>'; 28826)
+[2024-03-03T00:54:20.322+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-03T00:54:20.328+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,508 @@
+[2024-02-27T10:45:36.100+0530] {processor.py:161} INFO - Started process (PID=1528) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:45:36.100+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:45:36.101+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:45:36.101+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:45:36.159+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:45:36.239+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:45:36.239+0530] {override.py:1769} INFO - Created Permission View: can edit on DAG:fetch_weather_data_1
+[2024-02-27T10:45:36.242+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:45:36.241+0530] {override.py:1769} INFO - Created Permission View: can delete on DAG:fetch_weather_data_1
+[2024-02-27T10:45:36.243+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:45:36.243+0530] {override.py:1769} INFO - Created Permission View: can read on DAG:fetch_weather_data_1
+[2024-02-27T10:45:36.243+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:45:36.243+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:45:36.246+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:45:36.246+0530] {dag.py:3069} INFO - Creating ORM DAG for fetch_weather_data_1
+[2024-02-27T10:45:36.247+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:45:36.246+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:45:36.251+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.152 seconds
+[2024-02-27T10:47:07.704+0530] {processor.py:161} INFO - Started process (PID=1637) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:47:07.705+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:47:07.705+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:47:07.705+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:47:07.755+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:47:07.782+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:47:07.782+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:47:07.785+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:47:07.785+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:47:07.791+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.088 seconds
+[2024-02-27T10:49:05.388+0530] {processor.py:161} INFO - Started process (PID=1734) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:49:05.389+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:49:05.389+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:49:05.389+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:49:05.444+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:49:05.472+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:49:05.472+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:49:05.475+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:49:05.475+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:49:05.481+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.093 seconds
+[2024-02-27T10:50:32.855+0530] {processor.py:161} INFO - Started process (PID=1822) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:50:32.856+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:50:32.856+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:50:32.856+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:50:32.914+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:50:32.943+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:50:32.943+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:50:32.946+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:50:32.946+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:50:32.952+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.097 seconds
+[2024-02-27T10:51:47.132+0530] {processor.py:161} INFO - Started process (PID=1915) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:51:47.133+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:51:47.133+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:51:47.133+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:51:47.194+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:51:47.223+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:51:47.223+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:51:47.226+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:51:47.226+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:51:47.232+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.100 seconds
+[2024-02-27T10:53:37.200+0530] {processor.py:161} INFO - Started process (PID=2036) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:53:37.201+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:53:37.202+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:53:37.202+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:53:37.259+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:53:37.288+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:53:37.288+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:53:37.291+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:53:37.290+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:53:37.297+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.097 seconds
+[2024-02-27T10:55:11.670+0530] {processor.py:161} INFO - Started process (PID=2174) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:55:11.671+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:55:11.671+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:55:11.671+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:55:11.730+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:55:11.760+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:55:11.760+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:55:11.763+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:55:11.763+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:55:11.768+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.099 seconds
+[2024-02-27T10:56:55.280+0530] {processor.py:161} INFO - Started process (PID=2303) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:56:55.281+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:56:55.281+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:55.281+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:56:55.336+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:56:55.364+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:55.364+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:56:55.367+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:55.367+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:56:55.373+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.094 seconds
+[2024-02-27T10:58:29.289+0530] {processor.py:161} INFO - Started process (PID=2415) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:58:29.290+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:58:29.290+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:58:29.290+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:58:29.341+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:58:29.368+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:58:29.368+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:58:29.371+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:58:29.371+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:58:29.377+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.088 seconds
+[2024-02-27T10:59:23.413+0530] {processor.py:161} INFO - Started process (PID=2473) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:59:23.414+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T10:59:23.414+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:59:23.414+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:59:23.470+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T10:59:23.498+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:59:23.498+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:59:23.501+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:59:23.501+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T10:59:23.506+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.094 seconds
+[2024-02-27T11:00:17.694+0530] {processor.py:161} INFO - Started process (PID=2527) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:00:17.695+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:00:17.695+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:00:17.695+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:00:17.754+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:00:17.782+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:00:17.782+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:00:17.784+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:00:17.784+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:00:17.790+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.097 seconds
+[2024-02-27T11:01:15.852+0530] {processor.py:161} INFO - Started process (PID=2607) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:01:15.853+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:01:15.853+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:01:15.853+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:01:15.939+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:01:15.984+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:01:15.984+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:01:15.987+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:01:15.987+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:01:15.994+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.142 seconds
+[2024-02-27T11:02:43.395+0530] {processor.py:161} INFO - Started process (PID=2731) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:02:43.397+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:02:43.397+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:02:43.397+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:02:43.449+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:02:43.478+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:02:43.478+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:02:43.481+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:02:43.481+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:02:43.488+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.093 seconds
+[2024-02-27T11:03:33.222+0530] {processor.py:161} INFO - Started process (PID=2786) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:03:33.224+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:03:33.224+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:03:33.224+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:03:33.280+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:03:33.280+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:03:33.281+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:03:33.305+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.084 seconds
+[2024-02-27T11:04:24.989+0530] {processor.py:161} INFO - Started process (PID=2841) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:04:24.990+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:04:24.990+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:04:24.990+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:04:25.039+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:04:25.039+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:04:25.039+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:04:25.064+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.075 seconds
+[2024-02-27T11:05:20.356+0530] {processor.py:161} INFO - Started process (PID=2897) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:05:20.357+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:05:20.357+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:05:20.357+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:05:20.407+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:05:20.407+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:05:20.408+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:05:20.433+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.077 seconds
+[2024-02-27T11:06:16.888+0530] {processor.py:161} INFO - Started process (PID=2937) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:06:16.889+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:06:16.889+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:06:16.889+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:06:16.938+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:06:16.938+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:06:16.938+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:06:16.963+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.075 seconds
+[2024-02-27T11:07:07.219+0530] {processor.py:161} INFO - Started process (PID=2971) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:07:07.220+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:07:07.220+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:07:07.220+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:07:07.270+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:07:07.269+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:07:07.270+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:07:07.295+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.076 seconds
+[2024-02-27T11:07:55.919+0530] {processor.py:161} INFO - Started process (PID=3013) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:07:55.920+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:07:55.920+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:07:55.920+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:07:55.973+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:07:55.973+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:07:55.974+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:07:55.998+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.079 seconds
+[2024-02-27T11:08:47.969+0530] {processor.py:161} INFO - Started process (PID=3097) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:08:47.970+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:08:47.970+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:08:47.970+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:08:48.024+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:08:48.023+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:08:48.024+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:08:48.048+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.080 seconds
+[2024-02-27T11:09:41.820+0530] {processor.py:161} INFO - Started process (PID=3134) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:09:41.820+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:09:41.820+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:09:41.820+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:09:41.870+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:09:41.870+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:09:41.870+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:09:41.895+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.076 seconds
+[2024-02-27T11:10:29.798+0530] {processor.py:161} INFO - Started process (PID=3170) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:10:29.799+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:10:29.799+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:10:29.799+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:10:29.849+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:10:29.849+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:10:29.849+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:10:29.874+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.076 seconds
+[2024-02-27T11:11:16.489+0530] {processor.py:161} INFO - Started process (PID=3215) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:11:16.490+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:11:16.490+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:11:16.490+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:11:16.550+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:11:16.549+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:11:16.550+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:11:16.575+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.086 seconds
+[2024-02-27T11:12:07.358+0530] {processor.py:161} INFO - Started process (PID=3275) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:12:07.359+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:12:07.359+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:12:07.359+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:12:07.412+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:12:07.411+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:12:07.412+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:12:07.437+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.079 seconds
+[2024-02-27T11:13:01.450+0530] {processor.py:161} INFO - Started process (PID=3312) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:13:01.451+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:13:01.451+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:13:01.451+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:13:01.506+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:13:01.505+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:13:01.506+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:13:01.531+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.081 seconds
+[2024-02-27T11:13:58.945+0530] {processor.py:161} INFO - Started process (PID=3369) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:13:58.946+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:13:58.946+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:13:58.946+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:13:58.995+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:13:58.995+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:13:58.996+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:13:59.020+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.075 seconds
+[2024-02-27T11:14:52.738+0530] {processor.py:161} INFO - Started process (PID=3413) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:14:52.739+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:14:52.739+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:14:52.739+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:14:52.789+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:14:52.789+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:14:52.789+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:14:52.814+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.076 seconds
+[2024-02-27T11:15:43.296+0530] {processor.py:161} INFO - Started process (PID=3448) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:15:43.296+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:15:43.296+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:15:43.296+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:15:43.346+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:15:43.346+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:15:43.346+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:15:43.371+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.076 seconds
+[2024-02-27T11:16:33.023+0530] {processor.py:161} INFO - Started process (PID=3484) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:16:33.023+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:16:33.024+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:16:33.023+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:16:33.074+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:16:33.074+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:16:33.074+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:16:33.100+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.078 seconds
+[2024-02-27T11:17:30.388+0530] {processor.py:161} INFO - Started process (PID=3523) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:17:30.389+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:17:30.389+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:17:30.389+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:17:30.439+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:17:30.438+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:17:30.439+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:17:30.464+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.076 seconds
+[2024-02-27T11:18:27.606+0530] {processor.py:161} INFO - Started process (PID=3557) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:18:27.606+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:18:27.606+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:18:27.606+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:18:27.656+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:18:27.656+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:18:27.656+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:18:27.681+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.076 seconds
+[2024-02-27T11:19:40.578+0530] {processor.py:161} INFO - Started process (PID=3635) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:19:40.578+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:19:40.579+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:19:40.578+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:19:40.632+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:19:40.632+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:19:40.632+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:19:40.658+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.081 seconds
+[2024-02-27T11:21:03.856+0530] {processor.py:161} INFO - Started process (PID=3700) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:21:03.857+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:21:03.857+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:21:03.857+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:21:03.912+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:21:03.912+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 7, in <module>
+    from airflow.utils import logging
+ImportError: cannot import name 'logging' from 'airflow.utils' (/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/__init__.py)
+[2024-02-27T11:21:03.913+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:21:03.937+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.082 seconds
+[2024-02-27T11:22:04.577+0530] {processor.py:161} INFO - Started process (PID=3758) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:22:04.577+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:22:04.578+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:22:04.578+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:22:04.632+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:22:04.701+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:22:04.701+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:22:04.704+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:22:04.703+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:22:04.710+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.134 seconds
+[2024-02-27T11:23:39.470+0530] {processor.py:161} INFO - Started process (PID=3856) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:23:39.471+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:23:39.471+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:23:39.471+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:23:39.529+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:23:39.560+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:23:39.560+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:23:39.563+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:23:39.563+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:23:39.569+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.100 seconds
+[2024-02-27T11:25:17.252+0530] {processor.py:161} INFO - Started process (PID=3943) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:25:17.253+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:25:17.253+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:25:17.253+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:25:17.307+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:25:17.335+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:25:17.335+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:25:17.338+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:25:17.338+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:25:17.344+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.093 seconds
+[2024-02-27T11:26:11.588+0530] {processor.py:161} INFO - Started process (PID=3983) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:26:11.589+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:26:11.589+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:26:11.589+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:26:11.643+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:26:11.671+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:26:11.671+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:26:11.674+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:26:11.674+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:26:11.680+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.092 seconds
+[2024-02-27T11:27:01.069+0530] {processor.py:161} INFO - Started process (PID=4015) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:27:01.070+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:27:01.070+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:27:01.070+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:27:01.129+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:27:01.159+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:27:01.159+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:27:01.162+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:27:01.162+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:27:01.168+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.100 seconds
+[2024-02-27T11:27:36.765+0530] {processor.py:161} INFO - Started process (PID=4055) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:27:36.766+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:27:36.766+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:27:36.766+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:27:36.820+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:27:36.848+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:27:36.848+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:27:36.851+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:27:36.851+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:27:36.857+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.092 seconds
+[2024-02-27T11:29:10.553+0530] {processor.py:161} INFO - Started process (PID=4171) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:29:10.554+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:29:10.555+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:29:10.555+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:29:10.609+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:29:10.637+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:29:10.637+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:29:10.639+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:29:10.639+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:29:10.645+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.092 seconds
+[2024-02-27T11:30:05.581+0530] {processor.py:161} INFO - Started process (PID=4212) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:30:05.583+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:30:05.583+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:30:05.583+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:30:05.636+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:30:05.664+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:30:05.664+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:30:05.667+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:30:05.667+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:30:05.673+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.092 seconds
+[2024-02-27T11:30:56.052+0530] {processor.py:161} INFO - Started process (PID=4243) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:30:56.053+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:30:56.053+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:30:56.053+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:30:56.107+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:30:56.135+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:30:56.135+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:30:56.138+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:30:56.138+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:30:56.144+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.092 seconds
+[2024-02-27T11:31:50.587+0530] {processor.py:161} INFO - Started process (PID=4281) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:31:50.588+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:31:50.588+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:31:50.588+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:31:50.642+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:31:50.670+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:31:50.670+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:31:50.673+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:31:50.673+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:31:50.679+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.092 seconds
+[2024-02-27T11:32:38.331+0530] {processor.py:161} INFO - Started process (PID=4319) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:32:38.331+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:32:38.332+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:32:38.331+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:32:38.388+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:32:38.417+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:32:38.416+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:32:38.419+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:32:38.419+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:32:38.426+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.095 seconds
+[2024-02-27T11:33:15.637+0530] {processor.py:161} INFO - Started process (PID=4354) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:33:15.637+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:33:15.637+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:33:15.637+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:33:15.695+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:33:15.724+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:33:15.724+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:33:15.727+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:33:15.727+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:33:15.733+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.097 seconds
+[2024-02-27T11:34:50.436+0530] {processor.py:161} INFO - Started process (PID=4462) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:34:50.437+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:34:50.438+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:34:50.438+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:34:50.491+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:34:50.519+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:34:50.519+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:34:50.522+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:34:50.522+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:34:50.528+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.092 seconds
+[2024-02-27T11:35:42.483+0530] {processor.py:161} INFO - Started process (PID=4498) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:35:42.484+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:35:42.484+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:35:42.484+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:35:42.541+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:35:42.569+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:35:42.569+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:35:42.572+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:35:42.572+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:35:42.578+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.095 seconds
+[2024-02-27T11:36:30.962+0530] {processor.py:161} INFO - Started process (PID=4531) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:36:30.963+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:36:30.964+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:36:30.964+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:36:31.021+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:36:31.049+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:36:31.049+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:36:31.051+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:36:31.051+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:36:31.057+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.096 seconds
+[2024-02-27T11:38:49.219+0530] {processor.py:161} INFO - Started process (PID=4594) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:38:49.220+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:38:49.220+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:38:49.220+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:38:49.284+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:38:49.316+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:38:49.316+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:38:49.319+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:38:49.318+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:38:49.325+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.106 seconds
+[2024-02-27T11:40:26.343+0530] {processor.py:161} INFO - Started process (PID=4687) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:40:26.344+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:40:26.344+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:40:26.344+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:40:26.394+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:40:26.422+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:40:26.422+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:40:26.425+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:40:26.425+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:40:26.431+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.088 seconds
+[2024-02-27T11:41:30.361+0530] {processor.py:161} INFO - Started process (PID=4728) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:41:30.362+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:41:30.362+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:41:30.362+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:41:30.412+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:41:30.441+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:41:30.441+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:41:30.444+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:41:30.444+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:41:30.450+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.089 seconds
+[2024-02-27T11:42:27.889+0530] {processor.py:161} INFO - Started process (PID=4763) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:42:27.889+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-02-27T11:42:27.889+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:42:27.889+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:42:27.939+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-02-27T11:42:27.967+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:42:27.967+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:42:27.970+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:42:27.970+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-02-27T11:42:27.976+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.087 seconds

@@ -1,0 +1,210 @@
+[2024-03-08T00:11:10.661+0530] {processor.py:161} INFO - Started process (PID=1925) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:11:10.661+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:11:10.661+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:11:10.661+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:11:10.693+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:11:10.721+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:11:10.721+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:11:10.727+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:11:10.727+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:40:00+00:00, run_after=2024-03-07 18:41:00+00:00
+[2024-03-08T00:11:10.733+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.073 seconds
+[2024-03-08T00:12:49.371+0530] {processor.py:161} INFO - Started process (PID=2020) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:12:49.372+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:12:49.372+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:12:49.372+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:12:49.402+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:12:49.430+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:12:49.430+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:12:49.436+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:12:49.436+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:41:00+00:00, run_after=2024-03-07 18:42:00+00:00
+[2024-03-08T00:12:49.442+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.071 seconds
+[2024-03-08T00:13:41.647+0530] {processor.py:161} INFO - Started process (PID=2095) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:13:41.648+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:13:41.648+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:13:41.648+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:13:41.683+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:13:41.711+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:13:41.711+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:13:41.718+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:13:41.718+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:42:00+00:00, run_after=2024-03-07 18:43:00+00:00
+[2024-03-08T00:13:41.724+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.077 seconds
+[2024-03-08T00:14:21.520+0530] {processor.py:161} INFO - Started process (PID=2137) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:14:21.521+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:14:21.521+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:14:21.521+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:14:21.553+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:14:21.582+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:14:21.581+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:14:21.588+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:14:21.588+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:43:00+00:00, run_after=2024-03-07 18:44:00+00:00
+[2024-03-08T00:14:21.595+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.075 seconds
+[2024-03-08T00:15:00.492+0530] {processor.py:161} INFO - Started process (PID=2177) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:15:00.492+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:15:00.492+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:15:00.492+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:15:00.524+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:15:00.552+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:15:00.551+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:15:00.557+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:15:00.557+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:44:00+00:00, run_after=2024-03-07 18:45:00+00:00
+[2024-03-08T00:15:00.563+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.072 seconds
+[2024-03-08T00:15:40.164+0530] {processor.py:161} INFO - Started process (PID=2220) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:15:40.165+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:15:40.166+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:15:40.166+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:15:40.198+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:15:40.228+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:15:40.228+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:15:40.235+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:15:40.235+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:44:00+00:00, run_after=2024-03-07 18:45:00+00:00
+[2024-03-08T00:15:40.242+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.077 seconds
+[2024-03-08T00:16:19.253+0530] {processor.py:161} INFO - Started process (PID=2262) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:16:19.254+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:16:19.255+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:19.255+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:16:19.285+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:16:19.313+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:19.313+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:16:19.319+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:19.319+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:45:00+00:00, run_after=2024-03-07 18:46:00+00:00
+[2024-03-08T00:16:19.325+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.072 seconds
+[2024-03-08T00:16:57.866+0530] {processor.py:161} INFO - Started process (PID=2308) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:16:57.867+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:16:57.867+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:57.867+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:16:57.898+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:16:57.929+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:57.928+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:16:57.935+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:57.935+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:45:00+00:00, run_after=2024-03-07 18:46:00+00:00
+[2024-03-08T00:16:57.941+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.075 seconds
+[2024-03-08T00:17:38.237+0530] {processor.py:161} INFO - Started process (PID=2388) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:17:38.238+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:17:38.239+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:17:38.238+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:17:38.268+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:17:38.296+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:17:38.296+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:17:38.302+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:17:38.302+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:46:00+00:00, run_after=2024-03-07 18:47:00+00:00
+[2024-03-08T00:17:38.308+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.071 seconds
+[2024-03-08T00:18:31.939+0530] {processor.py:161} INFO - Started process (PID=2474) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:18:31.940+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:18:31.940+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:18:31.940+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:18:31.971+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:18:32.001+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:18:32.000+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:18:32.007+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:18:32.007+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:47:00+00:00, run_after=2024-03-07 18:48:00+00:00
+[2024-03-08T00:18:32.013+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.074 seconds
+[2024-03-08T00:20:14.816+0530] {processor.py:161} INFO - Started process (PID=2633) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:20:14.817+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:20:14.817+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:20:14.817+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:20:14.848+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:20:14.876+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:20:14.876+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:20:14.882+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:20:14.882+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:49:00+00:00, run_after=2024-03-07 18:50:00+00:00
+[2024-03-08T00:20:14.888+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.073 seconds
+[2024-03-08T00:22:51.390+0530] {processor.py:161} INFO - Started process (PID=2724) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:22:51.391+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:22:51.391+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:22:51.391+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:22:51.422+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:22:51.451+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:22:51.451+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:22:51.457+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:22:51.457+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:51:00+00:00, run_after=2024-03-07 18:52:00+00:00
+[2024-03-08T00:22:51.463+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.074 seconds
+[2024-03-08T00:24:05.062+0530] {processor.py:161} INFO - Started process (PID=2856) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:24:05.063+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:24:05.063+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:05.063+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:24:05.093+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:24:05.121+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:05.121+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:24:05.127+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:05.127+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:53:00+00:00, run_after=2024-03-07 18:54:00+00:00
+[2024-03-08T00:24:05.133+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.072 seconds
+[2024-03-08T00:24:47.300+0530] {processor.py:161} INFO - Started process (PID=2919) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:24:47.301+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:24:47.301+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:47.301+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:24:47.332+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:24:47.360+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:47.360+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:24:47.367+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:47.367+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:53:00+00:00, run_after=2024-03-07 18:54:00+00:00
+[2024-03-08T00:24:47.374+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.074 seconds
+[2024-03-08T00:25:29.946+0530] {processor.py:161} INFO - Started process (PID=3008) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:25:29.947+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:25:29.948+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:25:29.948+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:25:29.980+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:25:30.008+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:25:30.008+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:25:30.014+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:25:30.014+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:54:00+00:00, run_after=2024-03-07 18:55:00+00:00
+[2024-03-08T00:25:30.020+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.074 seconds
+[2024-03-08T00:27:00.773+0530] {processor.py:161} INFO - Started process (PID=3121) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:27:00.774+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:27:00.774+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:27:00.774+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:27:00.804+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:27:00.832+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:27:00.832+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:27:00.838+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:27:00.838+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:56:00+00:00, run_after=2024-03-07 18:57:00+00:00
+[2024-03-08T00:27:00.844+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.072 seconds
+[2024-03-08T00:28:17.392+0530] {processor.py:161} INFO - Started process (PID=3295) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:28:17.393+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:28:17.393+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:28:17.393+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:28:17.424+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:28:17.453+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:28:17.452+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:28:17.459+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:28:17.459+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:57:00+00:00, run_after=2024-03-07 18:58:00+00:00
+[2024-03-08T00:28:17.465+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.074 seconds
+[2024-03-08T00:29:13.668+0530] {processor.py:161} INFO - Started process (PID=3342) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:29:13.668+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:29:13.668+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:29:13.668+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:29:13.699+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:29:13.727+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:29:13.727+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:29:13.733+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:29:13.733+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:58:00+00:00, run_after=2024-03-07 18:59:00+00:00
+[2024-03-08T00:29:13.739+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.072 seconds
+[2024-03-08T00:30:11.083+0530] {processor.py:161} INFO - Started process (PID=3381) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:30:11.084+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:30:11.084+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:30:11.084+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:30:11.116+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:30:11.144+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:30:11.144+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:30:11.151+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:30:11.151+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 18:59:00+00:00, run_after=2024-03-07 19:00:00+00:00
+[2024-03-08T00:30:11.157+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.075 seconds
+[2024-03-08T00:31:12.914+0530] {processor.py:161} INFO - Started process (PID=3468) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:31:12.916+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:31:12.916+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:31:12.916+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:31:12.950+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:31:12.982+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:31:12.982+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:31:12.991+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:31:12.990+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:00:00+00:00, run_after=2024-03-07 19:01:00+00:00
+[2024-03-08T00:31:13.004+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.091 seconds
+[2024-03-08T00:32:14.087+0530] {processor.py:161} INFO - Started process (PID=3530) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:32:14.089+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:32:14.090+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:32:14.090+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:32:14.126+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:32:14.157+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:32:14.157+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:32:14.164+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:32:14.164+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:01:00+00:00, run_after=2024-03-07 19:02:00+00:00
+[2024-03-08T00:32:14.171+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.085 seconds
+[2024-03-08T00:33:13.041+0530] {processor.py:161} INFO - Started process (PID=3572) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:33:13.041+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:33:13.041+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:33:13.041+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:33:13.071+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:33:13.099+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:33:13.099+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:33:13.105+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:33:13.105+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:02:00+00:00, run_after=2024-03-07 19:03:00+00:00
+[2024-03-08T00:33:13.111+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.071 seconds
+[2024-03-08T00:34:11.893+0530] {processor.py:161} INFO - Started process (PID=3657) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:34:11.894+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:34:11.894+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:34:11.894+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:34:11.924+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:34:11.952+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:34:11.952+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:34:11.959+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:34:11.959+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:03:00+00:00, run_after=2024-03-07 19:04:00+00:00
+[2024-03-08T00:34:11.965+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.072 seconds
+[2024-03-08T00:35:10.007+0530] {processor.py:161} INFO - Started process (PID=3695) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:35:10.009+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:35:10.009+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:35:10.009+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:35:10.041+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:35:10.072+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:35:10.072+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:35:10.079+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:35:10.079+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:04:00+00:00, run_after=2024-03-07 19:05:00+00:00
+[2024-03-08T00:35:10.086+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.079 seconds
+[2024-03-08T00:36:06.343+0530] {processor.py:161} INFO - Started process (PID=3740) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:36:06.344+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:36:06.344+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:36:06.344+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:36:06.376+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:36:06.404+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:36:06.404+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:36:06.410+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:36:06.410+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:05:00+00:00, run_after=2024-03-07 19:06:00+00:00
+[2024-03-08T00:36:06.416+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.074 seconds
+[2024-03-08T00:37:02.985+0530] {processor.py:161} INFO - Started process (PID=3793) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:37:02.987+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:37:02.987+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:37:02.987+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:37:03.051+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:37:03.081+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:37:03.081+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:37:03.087+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:37:03.087+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:06:00+00:00, run_after=2024-03-07 19:07:00+00:00
+[2024-03-08T00:37:03.095+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.111 seconds
+[2024-03-08T00:38:00.440+0530] {processor.py:161} INFO - Started process (PID=3828) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:38:00.441+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:38:00.441+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:38:00.441+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:38:00.472+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:38:00.500+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:38:00.499+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:38:00.506+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:38:00.506+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:07:00+00:00, run_after=2024-03-07 19:08:00+00:00
+[2024-03-08T00:38:00.512+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.072 seconds
+[2024-03-08T00:38:57.560+0530] {processor.py:161} INFO - Started process (PID=3865) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:38:57.561+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:38:57.561+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:38:57.561+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:38:57.593+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:38:57.623+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:38:57.622+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:38:57.629+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:38:57.629+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:07:00+00:00, run_after=2024-03-07 19:08:00+00:00
+[2024-03-08T00:38:57.635+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.076 seconds
+[2024-03-08T00:39:57.637+0530] {processor.py:161} INFO - Started process (PID=3901) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:39:57.638+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:39:57.639+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:39:57.639+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:39:57.675+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:39:57.703+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:39:57.703+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:39:57.709+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:39:57.709+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:08:00+00:00, run_after=2024-03-07 19:09:00+00:00
+[2024-03-08T00:39:57.715+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.079 seconds
+[2024-03-08T00:40:55.544+0530] {processor.py:161} INFO - Started process (PID=3951) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:40:55.545+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py for tasks to queue
+[2024-03-08T00:40:55.545+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:40:55.545+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:40:55.577+0530] {processor.py:840} INFO - DAG(s) 'hello_world_dag' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py
+[2024-03-08T00:40:55.606+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:40:55.606+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:40:55.613+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:40:55.613+0530] {dag.py:3834} INFO - Setting next_dagrun for hello_world_dag to 2024-03-07 19:09:00+00:00, run_after=2024-03-07 19:10:00+00:00
+[2024-03-08T00:40:55.619+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/test.py took 0.076 seconds

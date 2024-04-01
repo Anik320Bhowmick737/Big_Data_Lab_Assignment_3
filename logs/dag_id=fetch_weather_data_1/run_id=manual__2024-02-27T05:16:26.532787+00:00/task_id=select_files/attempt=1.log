@@ -1,0 +1,33 @@
+[2024-02-27T10:46:40.944+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data_1.select_files manual__2024-02-27T05:16:26.532787+00:00 [queued]>
+[2024-02-27T10:46:40.946+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data_1.select_files manual__2024-02-27T05:16:26.532787+00:00 [queued]>
+[2024-02-27T10:46:40.946+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-02-27T10:46:40.949+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): select_files> on 2024-02-27 05:16:26.532787+00:00
+[2024-02-27T10:46:40.952+0530] {standard_task_runner.py:60} INFO - Started process 1606 to run task
+[2024-02-27T10:46:40.954+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'fetch_weather_data_1', 'select_files', 'manual__2024-02-27T05:16:26.532787+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/Data_fetcher.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpvaquk2bn']
+[2024-02-27T10:46:40.955+0530] {standard_task_runner.py:88} INFO - Job 38: Subtask select_files
+[2024-02-27T10:46:40.967+0530] {task_command.py:423} INFO - Running <TaskInstance: fetch_weather_data_1.select_files manual__2024-02-27T05:16:26.532787+00:00 [running]> on host aniks-macbook-air.local
+[2024-02-27T10:46:40.982+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fetch_weather_data_1' AIRFLOW_CTX_TASK_ID='select_files' AIRFLOW_CTX_EXECUTION_DATE='2024-02-27T05:16:26.532787+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-27T05:16:26.532787+00:00'
+[2024-02-27T10:46:40.984+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 39, in select_random_files
+    selected_files = random.sample(csv_files, num_files)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/random.py", line 453, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+[2024-02-27T10:46:40.986+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_weather_data_1, task_id=select_files, execution_date=20240227T051626, start_date=20240227T051640, end_date=20240227T051640
+[2024-02-27T10:46:40.988+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 38 for task select_files (Sample larger than population or is negative; 1606)
+[2024-02-27T10:46:41.016+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-27T10:46:41.021+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

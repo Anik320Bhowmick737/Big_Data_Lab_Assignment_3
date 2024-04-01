@@ -1,0 +1,46 @@
+[2024-03-03T11:32:51.818+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.Comb_data_loc scheduled__2024-03-02T00:33:00+00:00 [queued]>
+[2024-03-03T11:32:51.819+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.Comb_data_loc scheduled__2024-03-02T00:33:00+00:00 [queued]>
+[2024-03-03T11:32:51.820+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-03T11:32:51.823+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): Comb_data_loc> on 2024-03-02 00:33:00+00:00
+[2024-03-03T11:32:51.827+0530] {standard_task_runner.py:60} INFO - Started process 5938 to run task
+[2024-03-03T11:32:51.829+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'Comb_data_loc', 'scheduled__2024-03-02T00:33:00+00:00', '--job-id', '468', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmprvyr9iz9']
+[2024-03-03T11:32:51.830+0530] {standard_task_runner.py:88} INFO - Job 468: Subtask Comb_data_loc
+[2024-03-03T11:32:51.844+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.Comb_data_loc scheduled__2024-03-02T00:33:00+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-03T11:32:51.858+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='Comb_data_loc' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T00:33:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-02T00:33:00+00:00'
+[2024-03-03T11:32:51.870+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 107, in combine_data
+    data=pd.read_csv(file)
+         ^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '99999996407.csv'
+[2024-03-03T11:32:51.875+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_pipeline, task_id=Comb_data_loc, execution_date=20240302T003300, start_date=20240303T060251, end_date=20240303T060251
+[2024-03-03T11:32:51.877+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 468 for task Comb_data_loc ([Errno 2] No such file or directory: '99999996407.csv'; 5938)
+[2024-03-03T11:32:51.891+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-03T11:32:51.895+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check
