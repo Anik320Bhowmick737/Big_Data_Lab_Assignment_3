@@ -38,6 +38,19 @@ This assignment aims for setting up a data pipeline which automatically fetches 
 
     vi. **Generate the geomaps**: The Geomaps for each of the fields are generated using a library call geopandas.
 ## Results 
+The Dags are given below. The first one is the Data_fetcher and the second one is the Data_analysis
+<img width="1181" alt="Data_fetcher" src="https://github.com/Anik320Bhowmick737/Big_Data_Lab_Assignment_3/assets/97800241/527cfdd0-c824-43e6-a8da-646a5fae0ae1">
 
-     
-   
+
+<img width="1340" alt="Data_analysis" src="https://github.com/Anik320Bhowmick737/Big_Data_Lab_Assignment_3/assets/97800241/1e8aecf6-4483-482e-953c-d70565ae1aea">
+
+The animated geomaps are given below:
+### 2023 geomaps
+https://github.com/Anik320Bhowmick737/Big_Data_Lab_Assignment_3/assets/97800241/e6b0f869-f68a-4d18-a6c4-f971153b7b7d
+
+*The result depicts various weather parameters' spatial distribution in the month of July in 2023*
+### 2024 geomaps
+https://github.com/Anik320Bhowmick737/Big_Data_Lab_Assignment_3/assets/97800241/ce00ec21-974b-49d7-9b32-8aedc141677d
+
+*The result depicts various weather parameters' spatial distribution in the month of Jan in 2024*
+
