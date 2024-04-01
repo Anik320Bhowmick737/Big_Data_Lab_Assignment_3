@@ -1,0 +1,46 @@
+[2024-03-02T15:12:54.022+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.wait_for_archive manual__2024-03-02T09:40:34.746917+00:00 [queued]>
+[2024-03-02T15:12:54.024+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.wait_for_archive manual__2024-03-02T09:40:34.746917+00:00 [queued]>
+[2024-03-02T15:12:54.024+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-02T15:12:54.028+0530] {taskinstance.py:2214} INFO - Executing <Task(FileSensor): wait_for_archive> on 2024-03-02 09:40:34.746917+00:00
+[2024-03-02T15:12:54.030+0530] {standard_task_runner.py:60} INFO - Started process 3065 to run task
+[2024-03-02T15:12:54.032+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'wait_for_archive', 'manual__2024-03-02T09:40:34.746917+00:00', '--job-id', '193', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpnz1phdlv']
+[2024-03-02T15:12:54.033+0530] {standard_task_runner.py:88} INFO - Job 193: Subtask wait_for_archive
+[2024-03-02T15:12:54.047+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.wait_for_archive manual__2024-03-02T09:40:34.746917+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-02T15:12:54.063+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_archive' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T09:40:34.746917+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T09:40:34.746917+00:00'
+[2024-03-02T15:12:54.066+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:12:54.066+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:12:55.075+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:12:55.077+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:12:56.085+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:12:56.086+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:12:57.094+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:12:57.096+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:12:58.104+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:12:58.105+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:12:59.110+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:12:59.110+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:13:00.117+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:13:00.118+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:13:01.126+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:13:01.128+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:13:02.137+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:13:02.138+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:13:03.146+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:13:03.148+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:13:04.155+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:13:04.156+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:13:04.157+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/sensors/base.py", line 282, in execute
+    raise AirflowSensorTimeout(message)
+airflow.exceptions.AirflowSensorTimeout: Sensor has timed out; run duration of 10.092645708000418 seconds exceeds the specified timeout of 10.0.
+[2024-03-02T15:13:04.163+0530] {taskinstance.py:1149} INFO - Immediate failure requested. Marking task as FAILED. dag_id=weather_data_pipeline, task_id=wait_for_archive, execution_date=20240302T094034, start_date=20240302T094254, end_date=20240302T094304
+[2024-03-02T15:13:04.171+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 193 for task wait_for_archive (Sensor has timed out; run duration of 10.092645708000418 seconds exceeds the specified timeout of 10.0.; 3065)
+[2024-03-02T15:13:04.176+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-02T15:13:04.192+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

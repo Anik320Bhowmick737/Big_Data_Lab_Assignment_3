@@ -1,0 +1,29 @@
+[2024-03-08T00:19:57.979+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.Geo_map manual__2024-03-07T18:49:21.402711+00:00 [queued]>
+[2024-03-08T00:19:57.981+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.Geo_map manual__2024-03-07T18:49:21.402711+00:00 [queued]>
+[2024-03-08T00:19:57.981+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-08T00:19:57.985+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): Geo_map> on 2024-03-07 18:49:21.402711+00:00
+[2024-03-08T00:19:57.989+0530] {standard_task_runner.py:60} INFO - Started process 2608 to run task
+[2024-03-08T00:19:57.992+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'Geo_map', 'manual__2024-03-07T18:49:21.402711+00:00', '--job-id', '558', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmp9j45wa94']
+[2024-03-08T00:19:57.993+0530] {standard_task_runner.py:88} INFO - Job 558: Subtask Geo_map
+[2024-03-08T00:19:58.009+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.Geo_map manual__2024-03-07T18:49:21.402711+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-08T00:19:58.026+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='Geo_map' AIRFLOW_CTX_EXECUTION_DATE='2024-03-07T18:49:21.402711+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-07T18:49:21.402711+00:00'
+[2024-03-08T00:19:58.027+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-08T00:19:58.088+0530] {translations.py:712} INFO - ==================== <function annotate_downstream_side_inputs at 0x14f6d4900> ====================
+[2024-03-08T00:19:58.088+0530] {translations.py:712} INFO - ==================== <function fix_side_input_pcoll_coders at 0x14f6d4a40> ====================
+[2024-03-08T00:19:58.088+0530] {translations.py:712} INFO - ==================== <function pack_combiners at 0x14f6d4fe0> ====================
+[2024-03-08T00:19:58.089+0530] {translations.py:712} INFO - ==================== <function lift_combiners at 0x14f6d5080> ====================
+[2024-03-08T00:19:58.089+0530] {translations.py:712} INFO - ==================== <function expand_sdf at 0x14f6d5260> ====================
+[2024-03-08T00:19:58.089+0530] {translations.py:712} INFO - ==================== <function expand_gbk at 0x14f6d5300> ====================
+[2024-03-08T00:19:58.089+0530] {translations.py:712} INFO - ==================== <function sink_flattens at 0x14f6d5440> ====================
+[2024-03-08T00:19:58.089+0530] {translations.py:712} INFO - ==================== <function greedily_fuse at 0x14f6d54e0> ====================
+[2024-03-08T00:19:58.089+0530] {translations.py:712} INFO - ==================== <function read_to_impulse at 0x14f6d5580> ====================
+[2024-03-08T00:19:58.089+0530] {translations.py:712} INFO - ==================== <function impulse_to_input at 0x14f6d5620> ====================
+[2024-03-08T00:19:58.090+0530] {translations.py:712} INFO - ==================== <function sort_stages at 0x14f6d58a0> ====================
+[2024-03-08T00:19:58.090+0530] {translations.py:712} INFO - ==================== <function add_impulse_to_dangling_transforms at 0x14f6d59e0> ====================
+[2024-03-08T00:19:58.090+0530] {translations.py:712} INFO - ==================== <function setup_timer_mapping at 0x14f6d5800> ====================
+[2024-03-08T00:19:58.090+0530] {translations.py:712} INFO - ==================== <function populate_data_channel_coders at 0x14f6d5940> ====================
+[2024-03-08T00:19:58.090+0530] {statecache.py:234} INFO - Creating state cache with size 104857600
+[2024-03-08T00:19:58.091+0530] {worker_handlers.py:922} INFO - Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x14f7cd710> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+[2024-03-08T00:19:58.160+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:143 UserWarning: Starting a Matplotlib GUI outside of the main thread will likely fail.
+[2024-03-08T00:19:58.276+0530] {local_task_job_runner.py:234} INFO - Task exited with return code -6
+[2024-03-08T00:19:58.283+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

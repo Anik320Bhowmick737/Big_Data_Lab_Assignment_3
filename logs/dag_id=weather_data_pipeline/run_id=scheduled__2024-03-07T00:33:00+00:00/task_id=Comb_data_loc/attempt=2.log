@@ -1,0 +1,31 @@
+[2024-03-08T13:01:39.760+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.Comb_data_loc scheduled__2024-03-07T00:33:00+00:00 [queued]>
+[2024-03-08T13:01:39.762+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.Comb_data_loc scheduled__2024-03-07T00:33:00+00:00 [queued]>
+[2024-03-08T13:01:39.762+0530] {taskinstance.py:2193} INFO - Starting attempt 2 of 3
+[2024-03-08T13:01:39.766+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): Comb_data_loc> on 2024-03-07 00:33:00+00:00
+[2024-03-08T13:01:39.770+0530] {standard_task_runner.py:60} INFO - Started process 13289 to run task
+[2024-03-08T13:01:39.772+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'Comb_data_loc', 'scheduled__2024-03-07T00:33:00+00:00', '--job-id', '593', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmp29rzo4wu']
+[2024-03-08T13:01:39.773+0530] {standard_task_runner.py:88} INFO - Job 593: Subtask Comb_data_loc
+[2024-03-08T13:01:39.786+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.Comb_data_loc scheduled__2024-03-07T00:33:00+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-08T13:01:39.805+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='Comb_data_loc' AIRFLOW_CTX_EXECUTION_DATE='2024-03-07T00:33:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-07T00:33:00+00:00'
+[2024-03-08T13:01:40.199+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 112, in combine_data
+    selected_month=month[0]
+                   ~~~~~^^^
+IndexError: list index out of range
+[2024-03-08T13:01:40.202+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_pipeline, task_id=Comb_data_loc, execution_date=20240307T003300, start_date=20240308T073139, end_date=20240308T073140
+[2024-03-08T13:01:40.206+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 593 for task Comb_data_loc (list index out of range; 13289)
+[2024-03-08T13:01:40.238+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-08T13:01:40.245+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

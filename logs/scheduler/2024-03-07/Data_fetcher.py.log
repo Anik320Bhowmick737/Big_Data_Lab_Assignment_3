@@ -1,0 +1,210 @@
+[2024-03-08T00:11:03.554+0530] {processor.py:161} INFO - Started process (PID=1898) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:11:03.554+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:11:03.555+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:11:03.555+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:11:03.882+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:11:03.912+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:11:03.912+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:11:03.915+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:11:03.915+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:11:03.921+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.368 seconds
+[2024-03-08T00:12:45.819+0530] {processor.py:161} INFO - Started process (PID=2009) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:12:45.819+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:12:45.820+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:12:45.820+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:12:46.098+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:12:46.142+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:12:46.142+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:12:46.145+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:12:46.145+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:12:46.152+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.333 seconds
+[2024-03-08T00:13:40.578+0530] {processor.py:161} INFO - Started process (PID=2094) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:13:40.578+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:13:40.578+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:13:40.578+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:13:40.926+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:13:40.956+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:13:40.956+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:13:40.959+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:13:40.959+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:13:40.965+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.387 seconds
+[2024-03-08T00:14:20.492+0530] {processor.py:161} INFO - Started process (PID=2136) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:14:20.493+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:14:20.493+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:14:20.493+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:14:20.823+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:14:20.854+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:14:20.853+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:14:20.856+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:14:20.856+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:14:20.863+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.371 seconds
+[2024-03-08T00:14:59.435+0530] {processor.py:161} INFO - Started process (PID=2176) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:14:59.436+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:14:59.436+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:14:59.436+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:14:59.781+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:14:59.811+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:14:59.811+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:14:59.814+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:14:59.814+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:14:59.820+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.385 seconds
+[2024-03-08T00:15:39.083+0530] {processor.py:161} INFO - Started process (PID=2219) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:15:39.084+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:15:39.084+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:15:39.084+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:15:39.427+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:15:39.459+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:15:39.459+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:15:39.462+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:15:39.462+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:15:39.469+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.386 seconds
+[2024-03-08T00:16:18.174+0530] {processor.py:161} INFO - Started process (PID=2261) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:16:18.174+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:16:18.175+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:18.175+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:16:18.513+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:16:18.543+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:18.543+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:16:18.546+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:18.546+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:16:18.552+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.379 seconds
+[2024-03-08T00:16:56.346+0530] {processor.py:161} INFO - Started process (PID=2302) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:16:56.348+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:16:56.349+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:56.348+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:16:57.054+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:16:57.091+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:57.091+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:16:57.095+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:16:57.094+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:16:57.101+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.756 seconds
+[2024-03-08T00:17:36.982+0530] {processor.py:161} INFO - Started process (PID=2384) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:17:36.983+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:17:36.983+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:17:36.983+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:17:37.532+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:17:37.561+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:17:37.561+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:17:37.564+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:17:37.564+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:17:37.570+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.588 seconds
+[2024-03-08T00:18:29.964+0530] {processor.py:161} INFO - Started process (PID=2467) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:18:29.965+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:18:29.965+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:18:29.965+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:18:30.321+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:18:30.353+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:18:30.353+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:18:30.356+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:18:30.356+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:18:30.362+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.399 seconds
+[2024-03-08T00:20:13.411+0530] {processor.py:161} INFO - Started process (PID=2632) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:20:13.412+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:20:13.412+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:20:13.412+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:20:14.053+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:20:14.082+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:20:14.082+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:20:14.085+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:20:14.085+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:20:14.092+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.681 seconds
+[2024-03-08T00:22:49.262+0530] {processor.py:161} INFO - Started process (PID=2719) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:22:49.263+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:22:49.263+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:22:49.263+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:22:49.599+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:22:49.629+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:22:49.629+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:22:49.632+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:22:49.632+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:22:49.638+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.377 seconds
+[2024-03-08T00:24:04.033+0530] {processor.py:161} INFO - Started process (PID=2853) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:24:04.034+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:24:04.034+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:04.034+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:24:04.350+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:24:04.381+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:04.381+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:24:04.384+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:04.384+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:24:04.390+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.359 seconds
+[2024-03-08T00:24:46.233+0530] {processor.py:161} INFO - Started process (PID=2918) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:24:46.233+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:24:46.234+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:46.234+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:24:46.564+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:24:46.594+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:46.594+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:24:46.597+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:24:46.597+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:24:46.603+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.370 seconds
+[2024-03-08T00:25:27.834+0530] {processor.py:161} INFO - Started process (PID=3006) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:25:27.835+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:25:27.835+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:25:27.835+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:25:28.185+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:25:28.220+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:25:28.219+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:25:28.223+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:25:28.223+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:25:28.229+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.396 seconds
+[2024-03-08T00:26:57.962+0530] {processor.py:161} INFO - Started process (PID=3118) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:26:57.963+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:26:57.963+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:26:57.963+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:26:58.271+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:26:58.302+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:26:58.302+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:26:58.305+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:26:58.305+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:26:58.311+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.350 seconds
+[2024-03-08T00:28:15.973+0530] {processor.py:161} INFO - Started process (PID=3293) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:28:15.974+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:28:15.974+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:28:15.974+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:28:16.290+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:28:16.321+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:28:16.321+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:28:16.324+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:28:16.324+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:28:16.331+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.358 seconds
+[2024-03-08T00:29:11.518+0530] {processor.py:161} INFO - Started process (PID=3341) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:29:11.519+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:29:11.519+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:29:11.519+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:29:11.869+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:29:11.899+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:29:11.899+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:29:11.902+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:29:11.902+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:29:11.908+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.391 seconds
+[2024-03-08T00:30:08.977+0530] {processor.py:161} INFO - Started process (PID=3380) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:30:08.978+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:30:08.978+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:30:08.978+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:30:09.316+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:30:09.347+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:30:09.347+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:30:09.350+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:30:09.350+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:30:09.356+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.379 seconds
+[2024-03-08T00:31:10.813+0530] {processor.py:161} INFO - Started process (PID=3465) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:31:10.815+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:31:10.815+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:31:10.815+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:31:11.131+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:31:11.167+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:31:11.167+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:31:11.170+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:31:11.170+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:31:11.177+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.363 seconds
+[2024-03-08T00:32:11.888+0530] {processor.py:161} INFO - Started process (PID=3528) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:32:11.889+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:32:11.889+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:32:11.889+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:32:12.272+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:32:12.303+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:32:12.303+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:32:12.306+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:32:12.306+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:32:12.313+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.425 seconds
+[2024-03-08T00:33:10.917+0530] {processor.py:161} INFO - Started process (PID=3571) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:33:10.917+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:33:10.918+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:33:10.918+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:33:11.272+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:33:11.303+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:33:11.303+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:33:11.306+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:33:11.306+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:33:11.312+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.396 seconds
+[2024-03-08T00:34:09.702+0530] {processor.py:161} INFO - Started process (PID=3656) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:34:09.702+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:34:09.703+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:34:09.702+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:34:10.082+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:34:10.113+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:34:10.113+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:34:10.116+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:34:10.116+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:34:10.122+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.420 seconds
+[2024-03-08T00:35:07.886+0530] {processor.py:161} INFO - Started process (PID=3694) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:35:07.887+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:35:07.887+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:35:07.887+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:35:08.215+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:35:08.246+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:35:08.246+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:35:08.249+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:35:08.249+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:35:08.255+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.369 seconds
+[2024-03-08T00:36:04.073+0530] {processor.py:161} INFO - Started process (PID=3735) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:36:04.074+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:36:04.074+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:36:04.074+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:36:04.386+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:36:04.419+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:36:04.419+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:36:04.422+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:36:04.422+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:36:04.428+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.355 seconds
+[2024-03-08T00:37:01.514+0530] {processor.py:161} INFO - Started process (PID=3792) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:37:01.515+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:37:01.515+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:37:01.515+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:37:01.832+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:37:01.870+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:37:01.870+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:37:01.873+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:37:01.873+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:37:01.879+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.365 seconds
+[2024-03-08T00:37:58.374+0530] {processor.py:161} INFO - Started process (PID=3827) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:37:58.375+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:37:58.375+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:37:58.375+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:37:58.659+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:37:58.697+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:37:58.697+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:37:58.700+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:37:58.700+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:37:58.706+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.332 seconds
+[2024-03-08T00:38:55.417+0530] {processor.py:161} INFO - Started process (PID=3864) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:38:55.417+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:38:55.417+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:38:55.417+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:38:55.773+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:38:55.808+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:38:55.808+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:38:55.811+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:38:55.811+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:38:55.818+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.402 seconds
+[2024-03-08T00:39:55.516+0530] {processor.py:161} INFO - Started process (PID=3900) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:39:55.517+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:39:55.517+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:39:55.517+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:39:55.847+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:39:55.879+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:39:55.879+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:39:55.881+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:39:55.881+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:39:55.887+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.372 seconds
+[2024-03-08T00:40:53.356+0530] {processor.py:161} INFO - Started process (PID=3950) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:40:53.357+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py for tasks to queue
+[2024-03-08T00:40:53.357+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:40:53.357+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:40:53.703+0530] {processor.py:840} INFO - DAG(s) 'fetch_weather_data_1' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py
+[2024-03-08T00:40:53.734+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:40:53.734+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-03-08T00:40:53.737+0530] {logging_mixin.py:188} INFO - [2024-03-08T00:40:53.737+0530] {dag.py:3834} INFO - Setting next_dagrun for fetch_weather_data_1 to None, run_after=None
+[2024-03-08T00:40:53.744+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py took 0.389 seconds

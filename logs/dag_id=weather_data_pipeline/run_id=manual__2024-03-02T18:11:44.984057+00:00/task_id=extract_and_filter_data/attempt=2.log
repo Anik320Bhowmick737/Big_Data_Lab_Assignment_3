@@ -1,0 +1,78 @@
+[2024-03-02T23:46:58.193+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T18:11:44.984057+00:00 [queued]>
+[2024-03-02T23:46:58.195+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T18:11:44.984057+00:00 [queued]>
+[2024-03-02T23:46:58.195+0530] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-03-02T23:46:58.199+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_and_filter_data> on 2024-03-02 18:11:44.984057+00:00
+[2024-03-02T23:46:58.202+0530] {standard_task_runner.py:60} INFO - Started process 24471 to run task
+[2024-03-02T23:46:58.205+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'extract_and_filter_data', 'manual__2024-03-02T18:11:44.984057+00:00', '--job-id', '228', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpk372m50m']
+[2024-03-02T23:46:58.205+0530] {standard_task_runner.py:88} INFO - Job 228: Subtask extract_and_filter_data
+[2024-03-02T23:46:58.225+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T18:11:44.984057+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-02T23:46:58.244+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_and_filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T18:11:44.984057+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T18:11:44.984057+00:00'
+[2024-03-02T23:46:58.245+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-02T23:46:58.316+0530] {translations.py:712} INFO - ==================== <function annotate_downstream_side_inputs at 0x12fc93560> ====================
+[2024-03-02T23:46:58.316+0530] {translations.py:712} INFO - ==================== <function fix_side_input_pcoll_coders at 0x12fc936a0> ====================
+[2024-03-02T23:46:58.316+0530] {translations.py:712} INFO - ==================== <function pack_combiners at 0x12fc93c40> ====================
+[2024-03-02T23:46:58.317+0530] {translations.py:712} INFO - ==================== <function lift_combiners at 0x12fc93ce0> ====================
+[2024-03-02T23:46:58.317+0530] {translations.py:712} INFO - ==================== <function expand_sdf at 0x12fc93ec0> ====================
+[2024-03-02T23:46:58.317+0530] {translations.py:712} INFO - ==================== <function expand_gbk at 0x12fc93f60> ====================
+[2024-03-02T23:46:58.317+0530] {translations.py:712} INFO - ==================== <function sink_flattens at 0x12fc980e0> ====================
+[2024-03-02T23:46:58.317+0530] {translations.py:712} INFO - ==================== <function greedily_fuse at 0x12fc98180> ====================
+[2024-03-02T23:46:58.317+0530] {translations.py:712} INFO - ==================== <function read_to_impulse at 0x12fc98220> ====================
+[2024-03-02T23:46:58.318+0530] {translations.py:712} INFO - ==================== <function impulse_to_input at 0x12fc982c0> ====================
+[2024-03-02T23:46:58.318+0530] {translations.py:712} INFO - ==================== <function sort_stages at 0x12fc98540> ====================
+[2024-03-02T23:46:58.318+0530] {translations.py:712} INFO - ==================== <function add_impulse_to_dangling_transforms at 0x12fc98680> ====================
+[2024-03-02T23:46:58.318+0530] {translations.py:712} INFO - ==================== <function setup_timer_mapping at 0x12fc984a0> ====================
+[2024-03-02T23:46:58.318+0530] {translations.py:712} INFO - ==================== <function populate_data_channel_coders at 0x12fc985e0> ====================
+[2024-03-02T23:46:58.319+0530] {statecache.py:234} INFO - Creating state cache with size 104857600
+[2024-03-02T23:46:58.319+0530] {worker_handlers.py:922} INFO - Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x12fbb5050> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+[2024-03-02T23:46:59.059+0530] {python.py:202} INFO - Done. Returned value was: PCollection[ProcessDates.None]
+[2024-03-02T23:46:59.062+0530] {xcom.py:664} ERROR - Object of type PCollection is not JSON serializable. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your airflow config or make sure to decorate your object with attr.
+[2024-03-02T23:46:59.063+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/json.py", line 91, in default
+    return serialize(o)
+           ^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/serialization/serde.py", line 189, in serialize
+    raise TypeError(f"cannot serialize object of type {cls}")
+TypeError: cannot serialize object of type <class 'apache_beam.pvalue.PCollection'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 451, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session)
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 3010, in xcom_push
+    XCom.set(
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/xcom.py", line 247, in set
+    value = cls.serialize_value(
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/xcom.py", line 662, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/json.py", line 104, in encode
+    return super().encode(o)
+           ^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/utils/json.py", line 93, in default
+    return super().default(o)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type PCollection is not JSON serializable
+[2024-03-02T23:46:59.068+0530] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=weather_data_pipeline, task_id=extract_and_filter_data, execution_date=20240302T181144, start_date=20240302T181658, end_date=20240302T181659
+[2024-03-02T23:46:59.073+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 228 for task extract_and_filter_data (Object of type PCollection is not JSON serializable; 24471)
+[2024-03-02T23:46:59.109+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-02T23:46:59.118+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

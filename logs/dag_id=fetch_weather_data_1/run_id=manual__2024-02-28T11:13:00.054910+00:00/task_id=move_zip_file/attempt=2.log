@@ -1,0 +1,29 @@
+[2024-02-28T18:48:09.319+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data_1.move_zip_file manual__2024-02-28T11:13:00.054910+00:00 [queued]>
+[2024-02-28T18:48:09.321+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data_1.move_zip_file manual__2024-02-28T11:13:00.054910+00:00 [queued]>
+[2024-02-28T18:48:09.321+0530] {taskinstance.py:2193} INFO - Starting attempt 2 of 2
+[2024-02-28T18:48:09.325+0530] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): move_zip_file> on 2024-02-28 11:13:00.054910+00:00
+[2024-02-28T18:48:09.327+0530] {standard_task_runner.py:60} INFO - Started process 948 to run task
+[2024-02-28T18:48:09.329+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'fetch_weather_data_1', 'move_zip_file', 'manual__2024-02-28T11:13:00.054910+00:00', '--job-id', '140', '--raw', '--subdir', 'DAGS_FOLDER/Data_fetcher.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpwlbyida_']
+[2024-02-28T18:48:09.330+0530] {standard_task_runner.py:88} INFO - Job 140: Subtask move_zip_file
+[2024-02-28T18:48:09.342+0530] {task_command.py:423} INFO - Running <TaskInstance: fetch_weather_data_1.move_zip_file manual__2024-02-28T11:13:00.054910+00:00 [running]> on host aniks-macbook-air.local
+[2024-02-28T18:48:09.358+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fetch_weather_data_1' AIRFLOW_CTX_TASK_ID='move_zip_file' AIRFLOW_CTX_EXECUTION_DATE='2024-02-28T11:13:00.054910+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-28T11:13:00.054910+00:00'
+[2024-02-28T18:48:09.358+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T
+[2024-02-28T18:48:09.359+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'mv /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/Data/2024_data.zip /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/']
+[2024-02-28T18:48:09.361+0530] {subprocess.py:86} INFO - Output:
+[2024-02-28T18:48:09.363+0530] {subprocess.py:93} INFO - mv: rename /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/Data/2024_data.zip to /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data_storage/2024_data.zip: No such file or directory
+[2024-02-28T18:48:09.364+0530] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-28T18:48:09.366+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-28T18:48:09.367+0530] {taskinstance.py:1149} INFO - Marking task as FAILED. dag_id=fetch_weather_data_1, task_id=move_zip_file, execution_date=20240228T111300, start_date=20240228T131809, end_date=20240228T131809
+[2024-02-28T18:48:09.371+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 140 for task move_zip_file (Bash command failed. The command returned a non-zero exit code 1.; 948)
+[2024-02-28T18:48:09.388+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-28T18:48:09.392+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

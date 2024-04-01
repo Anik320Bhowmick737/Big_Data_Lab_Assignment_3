@@ -1,0 +1,234 @@
+[2024-02-27T10:46:59.198+0530] {processor.py:161} INFO - Started process (PID=1630) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:46:59.199+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T10:46:59.199+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:46:59.199+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:46:59.209+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:46:59.208+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py", line 138, in <module>
+    branching_venv = BranchPythonVirtualenvOperator(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 591, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-02-27T10:46:59.209+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:46:59.258+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.060 seconds
+[2024-02-27T10:50:22.282+0530] {processor.py:161} INFO - Started process (PID=1809) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:50:22.283+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T10:50:22.283+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:50:22.283+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:50:22.297+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:50:22.296+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py", line 138, in <module>
+    branching_venv = BranchPythonVirtualenvOperator(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 591, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-02-27T10:50:22.298+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:50:22.356+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.074 seconds
+[2024-02-27T10:53:28.457+0530] {processor.py:161} INFO - Started process (PID=2024) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:53:28.458+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T10:53:28.458+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:53:28.458+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:53:28.467+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:53:28.467+0530] {dagbag.py:350} ERROR - Failed to import: /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py", line 138, in <module>
+    branching_venv = BranchPythonVirtualenvOperator(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 437, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 591, in __init__
+    raise AirflowException("PythonVirtualenvOperator requires virtualenv, please install it.")
+airflow.exceptions.AirflowException: PythonVirtualenvOperator requires virtualenv, please install it.
+[2024-02-27T10:53:28.468+0530] {processor.py:842} WARNING - No viable dags retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:53:28.514+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.058 seconds
+[2024-02-27T10:56:36.489+0530] {processor.py:161} INFO - Started process (PID=2269) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:56:36.490+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T10:56:36.490+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:36.490+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:56:36.501+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:56:36.582+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:36.582+0530] {override.py:1769} INFO - Created Permission View: can delete on DAG:example_branch_operator
+[2024-02-27T10:56:36.585+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:36.585+0530] {override.py:1769} INFO - Created Permission View: can read on DAG:example_branch_operator
+[2024-02-27T10:56:36.586+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:36.586+0530] {override.py:1769} INFO - Created Permission View: can edit on DAG:example_branch_operator
+[2024-02-27T10:56:36.587+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:36.587+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:56:36.589+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:36.589+0530] {dag.py:3069} INFO - Creating ORM DAG for example_branch_operator
+[2024-02-27T10:56:36.592+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:56:36.592+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T10:56:36.598+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.109 seconds
+[2024-02-27T10:58:20.541+0530] {processor.py:161} INFO - Started process (PID=2406) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:58:20.542+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T10:58:20.543+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:58:20.543+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:58:20.553+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T10:58:20.629+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:58:20.629+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T10:58:20.634+0530] {logging_mixin.py:188} INFO - [2024-02-27T10:58:20.634+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T10:58:20.641+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.100 seconds
+[2024-02-27T11:00:08.930+0530] {processor.py:161} INFO - Started process (PID=2519) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:00:08.931+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:00:08.931+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:00:08.931+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:00:08.943+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:00:09.024+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:00:09.024+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:00:09.030+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:00:09.030+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:00:09.037+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.107 seconds
+[2024-02-27T11:02:35.217+0530] {processor.py:161} INFO - Started process (PID=2722) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:02:35.218+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:02:35.218+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:02:35.218+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:02:35.229+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:02:35.304+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:02:35.304+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:02:35.310+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:02:35.309+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:02:35.316+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.099 seconds
+[2024-02-27T11:04:16.313+0530] {processor.py:161} INFO - Started process (PID=2832) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:04:16.314+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:04:16.314+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:04:16.314+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:04:16.325+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:04:16.402+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:04:16.402+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:04:16.407+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:04:16.407+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:04:16.413+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.100 seconds
+[2024-02-27T11:06:08.675+0530] {processor.py:161} INFO - Started process (PID=2930) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:06:08.676+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:06:08.676+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:06:08.676+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:06:08.687+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:06:08.763+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:06:08.763+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:06:08.768+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:06:08.768+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:06:08.774+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.100 seconds
+[2024-02-27T11:07:47.808+0530] {processor.py:161} INFO - Started process (PID=3007) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:07:47.809+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:07:47.809+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:07:47.809+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:07:47.820+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:07:47.896+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:07:47.896+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:07:47.901+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:07:47.901+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:07:47.908+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.101 seconds
+[2024-02-27T11:09:33.772+0530] {processor.py:161} INFO - Started process (PID=3129) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:09:33.773+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:09:33.773+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:09:33.773+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:09:33.784+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:09:33.861+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:09:33.861+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:09:33.866+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:09:33.866+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:09:33.872+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.101 seconds
+[2024-02-27T11:11:09.376+0530] {processor.py:161} INFO - Started process (PID=3203) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:11:09.377+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:11:09.377+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:11:09.377+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:11:09.388+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:11:09.467+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:11:09.467+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:11:09.472+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:11:09.472+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:11:09.478+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.102 seconds
+[2024-02-27T11:12:52.741+0530] {processor.py:161} INFO - Started process (PID=3306) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:12:52.742+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:12:52.742+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:12:52.742+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:12:52.754+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:12:52.831+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:12:52.831+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:12:52.836+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:12:52.836+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:12:52.843+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.102 seconds
+[2024-02-27T11:14:44.023+0530] {processor.py:161} INFO - Started process (PID=3408) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:14:44.023+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:14:44.024+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:14:44.023+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:14:44.035+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:14:44.112+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:14:44.112+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:14:44.117+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:14:44.117+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:14:44.124+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.101 seconds
+[2024-02-27T11:16:24.373+0530] {processor.py:161} INFO - Started process (PID=3476) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:16:24.374+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:16:24.374+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:16:24.374+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:16:24.386+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:16:24.463+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:16:24.463+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:16:24.468+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:16:24.468+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:16:24.474+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.101 seconds
+[2024-02-27T11:18:19.062+0530] {processor.py:161} INFO - Started process (PID=3552) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:18:19.063+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:18:19.063+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:18:19.063+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:18:19.074+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:18:19.151+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:18:19.151+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:18:19.157+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:18:19.157+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:18:19.163+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.101 seconds
+[2024-02-27T11:20:55.187+0530] {processor.py:161} INFO - Started process (PID=3693) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:20:55.188+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:20:55.188+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:20:55.188+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:20:55.199+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:20:55.275+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:20:55.275+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:20:55.280+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:20:55.280+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:20:55.286+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.100 seconds
+[2024-02-27T11:25:08.613+0530] {processor.py:161} INFO - Started process (PID=3938) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:25:08.614+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:25:08.614+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:25:08.614+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:25:08.625+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:25:08.700+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:25:08.700+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:25:08.705+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:25:08.705+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:25:08.712+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.099 seconds
+[2024-02-27T11:26:52.330+0530] {processor.py:161} INFO - Started process (PID=4010) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:26:52.331+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:26:52.331+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:26:52.331+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:26:52.342+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:26:52.419+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:26:52.419+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:26:52.424+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:26:52.424+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:26:52.430+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.101 seconds
+[2024-02-27T11:29:01.700+0530] {processor.py:161} INFO - Started process (PID=4149) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:29:01.700+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:29:01.701+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:29:01.701+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:29:01.712+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:29:01.790+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:29:01.790+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:29:01.795+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:29:01.795+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:29:01.802+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.102 seconds
+[2024-02-27T11:30:47.485+0530] {processor.py:161} INFO - Started process (PID=4238) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:30:47.486+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:30:47.486+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:30:47.486+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:30:47.496+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:30:47.572+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:30:47.572+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:30:47.577+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:30:47.577+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:30:47.584+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.099 seconds
+[2024-02-27T11:32:31.438+0530] {processor.py:161} INFO - Started process (PID=4312) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:32:31.439+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:32:31.439+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:32:31.439+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:32:31.451+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:32:31.530+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:32:31.530+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:32:31.535+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:32:31.535+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:32:31.542+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.104 seconds
+[2024-02-27T11:34:41.687+0530] {processor.py:161} INFO - Started process (PID=4457) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:34:41.689+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:34:41.689+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:34:41.689+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:34:41.699+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:34:41.775+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:34:41.775+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:34:41.780+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:34:41.780+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:34:41.786+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.099 seconds
+[2024-02-27T11:36:22.870+0530] {processor.py:161} INFO - Started process (PID=4526) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:36:22.872+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:36:22.872+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:36:22.872+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:36:22.882+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:36:22.959+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:36:22.959+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:36:22.964+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:36:22.964+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:36:22.970+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.100 seconds
+[2024-02-27T11:40:17.586+0530] {processor.py:161} INFO - Started process (PID=4677) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:40:17.587+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:40:17.587+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:40:17.587+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:40:17.598+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:40:17.674+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:40:17.673+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:40:17.679+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:40:17.679+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:40:17.685+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.099 seconds
+[2024-02-27T11:42:19.168+0530] {processor.py:161} INFO - Started process (PID=4758) to work on /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:42:19.169+0530] {processor.py:830} INFO - Processing file /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py for tasks to queue
+[2024-02-27T11:42:19.169+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:42:19.169+0530] {dagbag.py:540} INFO - Filling up the DagBag from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:42:19.180+0530] {processor.py:840} INFO - DAG(s) 'example_branch_operator' retrieved from /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py
+[2024-02-27T11:42:19.255+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:42:19.255+0530] {dag.py:3047} INFO - Sync 1 DAGs
+[2024-02-27T11:42:19.260+0530] {logging_mixin.py:188} INFO - [2024-02-27T11:42:19.260+0530] {dag.py:3834} INFO - Setting next_dagrun for example_branch_operator to 2024-02-26 00:00:00+00:00, run_after=2024-02-27 00:00:00+00:00
+[2024-02-27T11:42:19.266+0530] {processor.py:183} INFO - Processing /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/example_dags/example_branch_operator.py took 0.098 seconds

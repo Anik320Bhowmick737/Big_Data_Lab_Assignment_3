@@ -1,0 +1,171 @@
+[2024-03-02T22:19:15.740+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T16:49:08.513052+00:00 [queued]>
+[2024-03-02T22:19:15.742+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T16:49:08.513052+00:00 [queued]>
+[2024-03-02T22:19:15.742+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-02T22:19:15.746+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_and_filter_data> on 2024-03-02 16:49:08.513052+00:00
+[2024-03-02T22:19:15.750+0530] {standard_task_runner.py:60} INFO - Started process 19990 to run task
+[2024-03-02T22:19:15.752+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'extract_and_filter_data', 'manual__2024-03-02T16:49:08.513052+00:00', '--job-id', '220', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpn19tzraz']
+[2024-03-02T22:19:15.753+0530] {standard_task_runner.py:88} INFO - Job 220: Subtask extract_and_filter_data
+[2024-03-02T22:19:15.780+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T16:49:08.513052+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-02T22:19:15.796+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_and_filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T16:49:08.513052+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T16:49:08.513052+00:00'
+[2024-03-02T22:19:15.797+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-02T22:19:15.872+0530] {translations.py:712} INFO - ==================== <function annotate_downstream_side_inputs at 0x13cb83a60> ====================
+[2024-03-02T22:19:15.872+0530] {translations.py:712} INFO - ==================== <function fix_side_input_pcoll_coders at 0x13cb83ba0> ====================
+[2024-03-02T22:19:15.872+0530] {translations.py:712} INFO - ==================== <function pack_combiners at 0x13cb8c180> ====================
+[2024-03-02T22:19:15.873+0530] {translations.py:712} INFO - ==================== <function lift_combiners at 0x13cb8c220> ====================
+[2024-03-02T22:19:15.873+0530] {translations.py:712} INFO - ==================== <function expand_sdf at 0x13cb8c400> ====================
+[2024-03-02T22:19:15.873+0530] {translations.py:712} INFO - ==================== <function expand_gbk at 0x13cb8c4a0> ====================
+[2024-03-02T22:19:15.873+0530] {translations.py:712} INFO - ==================== <function sink_flattens at 0x13cb8c5e0> ====================
+[2024-03-02T22:19:15.873+0530] {translations.py:712} INFO - ==================== <function greedily_fuse at 0x13cb8c680> ====================
+[2024-03-02T22:19:15.874+0530] {translations.py:712} INFO - ==================== <function read_to_impulse at 0x13cb8c720> ====================
+[2024-03-02T22:19:15.874+0530] {translations.py:712} INFO - ==================== <function impulse_to_input at 0x13cb8c7c0> ====================
+[2024-03-02T22:19:15.874+0530] {translations.py:712} INFO - ==================== <function sort_stages at 0x13cb8ca40> ====================
+[2024-03-02T22:19:15.874+0530] {translations.py:712} INFO - ==================== <function add_impulse_to_dangling_transforms at 0x13cb8cb80> ====================
+[2024-03-02T22:19:15.874+0530] {translations.py:712} INFO - ==================== <function setup_timer_mapping at 0x13cb8c9a0> ====================
+[2024-03-02T22:19:15.875+0530] {translations.py:712} INFO - ==================== <function populate_data_channel_coders at 0x13cb8cae0> ====================
+[2024-03-02T22:19:15.876+0530] {statecache.py:234} INFO - Creating state cache with size 104857600
+[2024-03-02T22:19:15.876+0530] {worker_handlers.py:922} INFO - Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x13cc59f10> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+[2024-03-02T22:19:15.892+0530] {bundle_processor.py:237} ERROR - '_ReadFromPandas' object is not subscriptable [while running 'FilterColumns']
+Traceback (most recent call last):
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 637, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 1963, in <lambda>
+    wrapper = lambda x: [fn(x)]
+                         ^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 55, in <lambda>
+    filtered_data = data | 'FilterColumns' >> beam.Map(lambda df: df[['DATE', 'LATITUDE', 'LONGITUDE']])
+                                                                  ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '_ReadFromPandas' object is not subscriptable
+[2024-03-02T22:19:15.894+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 637, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 1963, in <lambda>
+    wrapper = lambda x: [fn(x)]
+                         ^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 55, in <lambda>
+    filtered_data = data | 'FilterColumns' >> beam.Map(lambda df: df[['DATE', 'LATITUDE', 'LONGITUDE']])
+                                                                  ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '_ReadFromPandas' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 47, in extract_and_filter
+    with beam.Pipeline() as p:
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/pipeline.py", line 612, in __exit__
+    self.result = self.run()
+                  ^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/pipeline.py", line 586, in run
+    return self.runner.run_pipeline(self, self._options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/direct/direct_runner.py", line 128, in run_pipeline
+    return runner.run_pipeline(pipeline, options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 202, in run_pipeline
+    self._latest_run_result = self.run_via_runner_api(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 224, in run_via_runner_api
+    return self.run_stages(stage_context, stages)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 466, in run_stages
+    bundle_results = self._execute_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 794, in _execute_bundle
+    self._run_bundle(
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1031, in _run_bundle
+    result, splits = bundle_manager.process_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1367, in process_bundle
+    result_future = self._worker_handler.control_conn.push(process_bundle_req)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/worker_handlers.py", line 384, in push
+    response = self.worker.do_instruction(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/sdk_worker.py", line 650, in do_instruction
+    return getattr(self, request_type)(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/sdk_worker.py", line 688, in process_bundle
+    bundle_processor.process_bundle(instruction_id))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/bundle_processor.py", line 1113, in process_bundle
+    input_op_by_transform_id[element.transform_id].process_encoded(
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/bundle_processor.py", line 237, in process_encoded
+    self.output(decoded_value)
+  File "apache_beam/runners/worker/operations.py", line 570, in apache_beam.runners.worker.operations.Operation.output
+  File "apache_beam/runners/worker/operations.py", line 572, in apache_beam.runners.worker.operations.Operation.output
+  File "apache_beam/runners/worker/operations.py", line 263, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1547, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 637, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 1963, in <lambda>
+    wrapper = lambda x: [fn(x)]
+                         ^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 55, in <lambda>
+    filtered_data = data | 'FilterColumns' >> beam.Map(lambda df: df[['DATE', 'LATITUDE', 'LONGITUDE']])
+                                                                  ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '_ReadFromPandas' object is not subscriptable [while running 'FilterColumns']
+[2024-03-02T22:19:15.900+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_pipeline, task_id=extract_and_filter_data, execution_date=20240302T164908, start_date=20240302T164915, end_date=20240302T164915
+[2024-03-02T22:19:15.904+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 220 for task extract_and_filter_data ('_ReadFromPandas' object is not subscriptable [while running 'FilterColumns']; 19990)
+[2024-03-02T22:19:15.948+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-02T22:19:15.956+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

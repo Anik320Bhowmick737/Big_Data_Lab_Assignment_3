@@ -1,0 +1,263 @@
+[2024-03-03T14:59:54.727+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data scheduled__2024-03-02T00:33:00+00:00 [queued]>
+[2024-03-03T14:59:54.729+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data scheduled__2024-03-02T00:33:00+00:00 [queued]>
+[2024-03-03T14:59:54.729+0530] {taskinstance.py:2193} INFO - Starting attempt 8 of 9
+[2024-03-03T14:59:54.733+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_and_filter_data> on 2024-03-02 00:33:00+00:00
+[2024-03-03T14:59:54.737+0530] {standard_task_runner.py:60} INFO - Started process 14864 to run task
+[2024-03-03T14:59:54.740+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'extract_and_filter_data', 'scheduled__2024-03-02T00:33:00+00:00', '--job-id', '484', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpfmm6r2kp']
+[2024-03-03T14:59:54.741+0530] {standard_task_runner.py:88} INFO - Job 484: Subtask extract_and_filter_data
+[2024-03-03T14:59:54.758+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.extract_and_filter_data scheduled__2024-03-02T00:33:00+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-03T14:59:54.789+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_and_filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T00:33:00+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-03-02T00:33:00+00:00'
+[2024-03-03T14:59:54.790+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-03T14:59:54.896+0530] {translations.py:712} INFO - ==================== <function annotate_downstream_side_inputs at 0x1473a68e0> ====================
+[2024-03-03T14:59:54.897+0530] {translations.py:712} INFO - ==================== <function fix_side_input_pcoll_coders at 0x1473a6a20> ====================
+[2024-03-03T14:59:54.897+0530] {translations.py:712} INFO - ==================== <function pack_combiners at 0x1473a6fc0> ====================
+[2024-03-03T14:59:54.897+0530] {translations.py:712} INFO - ==================== <function lift_combiners at 0x1473a7060> ====================
+[2024-03-03T14:59:54.897+0530] {translations.py:712} INFO - ==================== <function expand_sdf at 0x1473a7240> ====================
+[2024-03-03T14:59:54.897+0530] {translations.py:712} INFO - ==================== <function expand_gbk at 0x1473a72e0> ====================
+[2024-03-03T14:59:54.897+0530] {translations.py:712} INFO - ==================== <function sink_flattens at 0x1473a7420> ====================
+[2024-03-03T14:59:54.897+0530] {translations.py:712} INFO - ==================== <function greedily_fuse at 0x1473a74c0> ====================
+[2024-03-03T14:59:54.898+0530] {translations.py:712} INFO - ==================== <function read_to_impulse at 0x1473a7560> ====================
+[2024-03-03T14:59:54.898+0530] {translations.py:712} INFO - ==================== <function impulse_to_input at 0x1473a7600> ====================
+[2024-03-03T14:59:54.898+0530] {translations.py:712} INFO - ==================== <function sort_stages at 0x1473a7880> ====================
+[2024-03-03T14:59:54.898+0530] {translations.py:712} INFO - ==================== <function add_impulse_to_dangling_transforms at 0x1473a79c0> ====================
+[2024-03-03T14:59:54.898+0530] {translations.py:712} INFO - ==================== <function setup_timer_mapping at 0x1473a77e0> ====================
+[2024-03-03T14:59:54.898+0530] {translations.py:712} INFO - ==================== <function populate_data_channel_coders at 0x1473a7920> ====================
+[2024-03-03T14:59:54.899+0530] {statecache.py:234} INFO - Creating state cache with size 104857600
+[2024-03-03T14:59:54.899+0530] {worker_handlers.py:922} INFO - Created Worker handler <apache_beam.runners.portability.fn_api_runner.worker_handlers.EmbeddedWorkerHandler object at 0x1477039d0> for environment ref_Environment_default_environment_1 (beam:env:embedded_python:v1, b'')
+[2024-03-03T14:59:54.968+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:55.075+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:55.180+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,23) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:55.252+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:55.398+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (17,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:55.489+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:55.553+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10,17) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:55.655+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:55.937+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (17,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:56.217+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:56.703+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,17,23,38,43,44) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:56.777+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10,17) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:56.862+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,10,17) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:56.976+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:57.125+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:57.259+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10,11,22) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:57.468+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:57.643+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,13) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:57.746+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (17) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:57.834+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:57.992+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,11,18,22) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:58.152+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,10,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:58.256+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10,17,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:58.352+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (7,9,10,38,39) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:58.499+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:58.697+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:58.838+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10,22) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:58.991+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:59.076+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,17,18,22) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:59.169+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:59.256+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:59.367+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,10,17,18,38,39) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:59.506+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:59.650+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,17,18,23) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:59.726+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10,17,18,21) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:59.847+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T14:59:59.971+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,15,17,20,23,37,111,113) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:00.466+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10,17,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:00.557+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (17) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:00.666+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:00.790+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,10,21) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:00.943+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,18,23) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:01.063+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10,17) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:01.170+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,17,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:01.348+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:01.669+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:01.881+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:02.112+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10,11,12,13,15,20,36,43,44,45,48,49,51,108,111,113) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:02.276+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (11,18,23) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:02.404+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10,17,18) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:02.676+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:03.145+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:03.283+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (8,9,22) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:03.387+0530] {logging_mixin.py:188} WARNING - /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py:51 DtypeWarning: Columns (9,10) have mixed types. Specify dtype option on import or set low_memory=False.
+[2024-03-03T15:00:03.488+0530] {bundle_processor.py:237} ERROR - Error tokenizing data. C error: Expected 1 fields in line 9, saw 2
+ [while running 'ReadCSVFiles']
+Traceback (most recent call last):
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 637, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 1963, in <lambda>
+    wrapper = lambda x: [fn(x)]
+                         ^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 51, in read_csv_file
+    df = pd.read_csv(file_path)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1 fields in line 9, saw 2
+
+[2024-03-03T15:00:03.693+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 637, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 1963, in <lambda>
+    wrapper = lambda x: [fn(x)]
+                         ^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 51, in read_csv_file
+    df = pd.read_csv(file_path)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1 fields in line 9, saw 2
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 60, in extract_and_filter
+    with beam.Pipeline() as p:
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/pipeline.py", line 612, in __exit__
+    self.result = self.run()
+                  ^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/pipeline.py", line 586, in run
+    return self.runner.run_pipeline(self, self._options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/direct/direct_runner.py", line 128, in run_pipeline
+    return runner.run_pipeline(pipeline, options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 202, in run_pipeline
+    self._latest_run_result = self.run_via_runner_api(
+                              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 224, in run_via_runner_api
+    return self.run_stages(stage_context, stages)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 466, in run_stages
+    bundle_results = self._execute_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 794, in _execute_bundle
+    self._run_bundle(
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1031, in _run_bundle
+    result, splits = bundle_manager.process_bundle(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/fn_runner.py", line 1367, in process_bundle
+    result_future = self._worker_handler.control_conn.push(process_bundle_req)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/portability/fn_api_runner/worker_handlers.py", line 384, in push
+    response = self.worker.do_instruction(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/sdk_worker.py", line 650, in do_instruction
+    return getattr(self, request_type)(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/sdk_worker.py", line 688, in process_bundle
+    bundle_processor.process_bundle(instruction_id))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/bundle_processor.py", line 1113, in process_bundle
+    input_op_by_transform_id[element.transform_id].process_encoded(
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/runners/worker/bundle_processor.py", line 237, in process_encoded
+    self.output(decoded_value)
+  File "apache_beam/runners/worker/operations.py", line 570, in apache_beam.runners.worker.operations.Operation.output
+  File "apache_beam/runners/worker/operations.py", line 572, in apache_beam.runners.worker.operations.Operation.output
+  File "apache_beam/runners/worker/operations.py", line 263, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1526, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 636, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "apache_beam/runners/common.py", line 1621, in apache_beam.runners.common._OutputHandler.handle_process_outputs
+  File "apache_beam/runners/common.py", line 1734, in apache_beam.runners.common._OutputHandler._write_value_to_tag
+  File "apache_beam/runners/worker/operations.py", line 266, in apache_beam.runners.worker.operations.SingletonElementConsumerSet.receive
+  File "apache_beam/runners/worker/operations.py", line 953, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/worker/operations.py", line 954, in apache_beam.runners.worker.operations.DoOperation.process
+  File "apache_beam/runners/common.py", line 1437, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 1547, in apache_beam.runners.common.DoFnRunner._reraise_augmented
+  File "apache_beam/runners/common.py", line 1435, in apache_beam.runners.common.DoFnRunner.process
+  File "apache_beam/runners/common.py", line 637, in apache_beam.runners.common.SimpleInvoker.invoke_process
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/transforms/core.py", line 1963, in <lambda>
+    wrapper = lambda x: [fn(x)]
+                         ^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 51, in read_csv_file
+    df = pd.read_csv(file_path)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Expected 1 fields in line 9, saw 2
+ [while running 'ReadCSVFiles']
+[2024-03-03T15:00:03.714+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_pipeline, task_id=extract_and_filter_data, execution_date=20240302T003300, start_date=20240303T092954, end_date=20240303T093003
+[2024-03-03T15:00:03.728+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 484 for task extract_and_filter_data (Error tokenizing data. C error: Expected 1 fields in line 9, saw 2
+ [while running 'ReadCSVFiles']; 14864)
+[2024-03-03T15:00:03.777+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-03T15:00:03.789+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,11 @@
+[2024-03-03T03:10:36.503+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.wait_for_archive manual__2024-03-02T19:24:10.303999+00:00 [queued]>
+[2024-03-03T03:10:36.505+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.wait_for_archive manual__2024-03-02T19:24:10.303999+00:00 [queued]>
+[2024-03-03T03:10:36.505+0530] {taskinstance.py:2193} INFO - Starting attempt 21 of 22
+[2024-03-03T03:10:36.509+0530] {taskinstance.py:2214} INFO - Executing <Task(FileSensor): wait_for_archive> on 2024-03-02 19:24:10.303999+00:00
+[2024-03-03T03:10:36.513+0530] {standard_task_runner.py:60} INFO - Started process 37978 to run task
+[2024-03-03T03:10:36.516+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'wait_for_archive', 'manual__2024-03-02T19:24:10.303999+00:00', '--job-id', '422', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpoes7cv6y']
+[2024-03-03T03:10:36.517+0530] {standard_task_runner.py:88} INFO - Job 422: Subtask wait_for_archive
+[2024-03-03T03:11:41.717+0530] {local_task_job_runner.py:302} WARNING - State of this instance has been externally set to None. Terminating instance.
+[2024-03-03T03:11:41.720+0530] {process_utils.py:131} INFO - Sending 15 to group 37978. PIDs of all processes in the group: [37978]
+[2024-03-03T03:11:41.720+0530] {process_utils.py:86} INFO - Sending the signal 15 to group 37978
+[2024-03-03T03:11:41.724+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=37978, status='terminated', exitcode=<Negsignal.SIGTERM: -15>, started='03:10:36') (37978) terminated with exit code -15

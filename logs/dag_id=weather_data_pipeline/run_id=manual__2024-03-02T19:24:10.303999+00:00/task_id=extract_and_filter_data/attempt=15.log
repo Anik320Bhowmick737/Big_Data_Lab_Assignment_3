@@ -1,0 +1,37 @@
+[2024-03-03T02:11:05.915+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T19:24:10.303999+00:00 [queued]>
+[2024-03-03T02:11:05.917+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T19:24:10.303999+00:00 [queued]>
+[2024-03-03T02:11:05.917+0530] {taskinstance.py:2193} INFO - Starting attempt 15 of 16
+[2024-03-03T02:11:05.920+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): extract_and_filter_data> on 2024-03-02 19:24:10.303999+00:00
+[2024-03-03T02:11:05.924+0530] {standard_task_runner.py:60} INFO - Started process 34248 to run task
+[2024-03-03T02:11:05.927+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'extract_and_filter_data', 'manual__2024-03-02T19:24:10.303999+00:00', '--job-id', '375', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpv6nwxswz']
+[2024-03-03T02:11:05.928+0530] {standard_task_runner.py:88} INFO - Job 375: Subtask extract_and_filter_data
+[2024-03-03T02:11:05.947+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.extract_and_filter_data manual__2024-03-02T19:24:10.303999+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-03T02:11:05.968+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='extract_and_filter_data' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T19:24:10.303999+00:00' AIRFLOW_CTX_TRY_NUMBER='15' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T19:24:10.303999+00:00'
+[2024-03-03T02:11:05.969+0530] {pipeline.py:196} INFO - Missing pipeline option (runner). Executing pipeline using the default runner: DirectRunner.
+[2024-03-03T02:11:06.014+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_analysis.py", line 63, in extract_and_filter
+    processed_data = (csv_files | beam.Map(lambda x: x.assign(DATE=x['DATE'].str[5:7]))| beam.Map(lambda x:json.dumps(x)))
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/pvalue.py", line 137, in __or__
+    return self.pipeline.apply(ptransform, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/apache_beam/pipeline.py", line 699, in apply
+    raise RuntimeError(
+RuntimeError: A transform with label "Map(<lambda at Data_analysis.py:63>)" already exists in the pipeline. To apply a transform with a specified label write pvalue | "label" >> transform
+[2024-03-03T02:11:06.018+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=weather_data_pipeline, task_id=extract_and_filter_data, execution_date=20240302T192410, start_date=20240302T204105, end_date=20240302T204106
+[2024-03-03T02:11:06.021+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 375 for task extract_and_filter_data (A transform with label "Map(<lambda at Data_analysis.py:63>)" already exists in the pipeline. To apply a transform with a specified label write pvalue | "label" >> transform; 34248)
+[2024-03-03T02:11:06.031+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-03T02:11:06.038+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

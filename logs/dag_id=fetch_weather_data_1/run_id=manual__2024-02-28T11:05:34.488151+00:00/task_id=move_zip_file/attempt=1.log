@@ -1,0 +1,29 @@
+[2024-02-28T16:37:52.452+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data_1.move_zip_file manual__2024-02-28T11:05:34.488151+00:00 [queued]>
+[2024-02-28T16:37:52.454+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data_1.move_zip_file manual__2024-02-28T11:05:34.488151+00:00 [queued]>
+[2024-02-28T16:37:52.454+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-02-28T16:37:52.457+0530] {taskinstance.py:2214} INFO - Executing <Task(BashOperator): move_zip_file> on 2024-02-28 11:05:34.488151+00:00
+[2024-02-28T16:37:52.460+0530] {standard_task_runner.py:60} INFO - Started process 8612 to run task
+[2024-02-28T16:37:52.463+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'fetch_weather_data_1', 'move_zip_file', 'manual__2024-02-28T11:05:34.488151+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/Data_fetcher.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmp6ttsaseb']
+[2024-02-28T16:37:52.463+0530] {standard_task_runner.py:88} INFO - Job 116: Subtask move_zip_file
+[2024-02-28T16:37:52.478+0530] {task_command.py:423} INFO - Running <TaskInstance: fetch_weather_data_1.move_zip_file manual__2024-02-28T11:05:34.488151+00:00 [running]> on host aniks-macbook-air.local
+[2024-02-28T16:37:52.495+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fetch_weather_data_1' AIRFLOW_CTX_TASK_ID='move_zip_file' AIRFLOW_CTX_EXECUTION_DATE='2024-02-28T11:05:34.488151+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-28T11:05:34.488151+00:00'
+[2024-02-28T16:37:52.495+0530] {subprocess.py:63} INFO - Tmp dir root location: /var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T
+[2024-02-28T16:37:52.496+0530] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'mv /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/Data/2024_data.zip /Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/Data storage']
+[2024-02-28T16:37:52.498+0530] {subprocess.py:86} INFO - Output:
+[2024-02-28T16:37:52.501+0530] {subprocess.py:93} INFO - mv: storage is not a directory
+[2024-02-28T16:37:52.501+0530] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-02-28T16:37:52.503+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-02-28T16:37:52.505+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_weather_data_1, task_id=move_zip_file, execution_date=20240228T110534, start_date=20240228T110752, end_date=20240228T110752
+[2024-02-28T16:37:52.509+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 116 for task move_zip_file (Bash command failed. The command returned a non-zero exit code 1.; 8612)
+[2024-02-28T16:37:52.524+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-02-28T16:37:52.529+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check

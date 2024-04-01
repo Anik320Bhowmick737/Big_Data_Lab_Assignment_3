@@ -1,0 +1,35 @@
+[2024-02-28T15:49:04.761+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: fetch_weather_data_1.fetch_files manual__2024-02-28T10:18:45.407670+00:00 [queued]>
+[2024-02-28T15:49:04.763+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: fetch_weather_data_1.fetch_files manual__2024-02-28T10:18:45.407670+00:00 [queued]>
+[2024-02-28T15:49:04.763+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-02-28T15:49:04.766+0530] {taskinstance.py:2214} INFO - Executing <Task(PythonOperator): fetch_files> on 2024-02-28 10:18:45.407670+00:00
+[2024-02-28T15:49:04.769+0530] {standard_task_runner.py:60} INFO - Started process 6153 to run task
+[2024-02-28T15:49:04.771+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'fetch_weather_data_1', 'fetch_files', 'manual__2024-02-28T10:18:45.407670+00:00', '--job-id', '93', '--raw', '--subdir', 'DAGS_FOLDER/Data_fetcher.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpf70fvdqy']
+[2024-02-28T15:49:04.771+0530] {standard_task_runner.py:88} INFO - Job 93: Subtask fetch_files
+[2024-02-28T15:49:04.782+0530] {task_command.py:423} INFO - Running <TaskInstance: fetch_weather_data_1.fetch_files manual__2024-02-28T10:18:45.407670+00:00 [running]> on host aniks-macbook-air.local
+[2024-02-28T15:49:04.798+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='fetch_weather_data_1' AIRFLOW_CTX_TASK_ID='fetch_files' AIRFLOW_CTX_EXECUTION_DATE='2024-02-28T10:18:45.407670+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-02-28T10:18:45.407670+00:00'
+[2024-02-28T15:52:13.463+0530] {process_utils.py:131} INFO - Sending 15 to group 6153. PIDs of all processes in the group: [6340, 6153]
+[2024-02-28T15:52:13.465+0530] {process_utils.py:86} INFO - Sending the signal 15 to group 6153
+[2024-02-28T15:52:13.466+0530] {taskinstance.py:2480} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-02-28T15:52:13.472+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 200, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/operators/python.py", line 217, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/airflow/dags/Data_fetcher.py", line 49, in fetch_csv_files
+    os.system(f"curl -o {download_path}/{file_name} {base_url}/{year}/{file_name}")
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 2482, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-02-28T15:52:13.475+0530] {taskinstance.py:1149} INFO - Marking task as UP_FOR_RETRY. dag_id=fetch_weather_data_1, task_id=fetch_files, execution_date=20240228T101845, start_date=20240228T101904, end_date=20240228T102213
+[2024-02-28T15:52:13.481+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 93 for task fetch_files (Task received SIGTERM signal; 6153)
+[2024-02-28T15:52:13.497+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=6153, status='terminated', exitcode=1, started='15:49:04') (6153) terminated with exit code 1
+[2024-02-28T15:52:13.497+0530] {process_utils.py:79} INFO - Process psutil.Process(pid=6340, status='terminated', started='15:52:13') (6340) terminated with exit code None

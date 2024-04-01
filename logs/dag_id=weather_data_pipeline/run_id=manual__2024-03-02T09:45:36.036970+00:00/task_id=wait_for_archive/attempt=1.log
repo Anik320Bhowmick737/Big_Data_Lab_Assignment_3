@@ -1,0 +1,146 @@
+[2024-03-02T15:15:37.884+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: weather_data_pipeline.wait_for_archive manual__2024-03-02T09:45:36.036970+00:00 [queued]>
+[2024-03-02T15:15:37.886+0530] {taskinstance.py:1979} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: weather_data_pipeline.wait_for_archive manual__2024-03-02T09:45:36.036970+00:00 [queued]>
+[2024-03-02T15:15:37.886+0530] {taskinstance.py:2193} INFO - Starting attempt 1 of 2
+[2024-03-02T15:15:37.889+0530] {taskinstance.py:2214} INFO - Executing <Task(FileSensor): wait_for_archive> on 2024-03-02 09:45:36.036970+00:00
+[2024-03-02T15:15:37.892+0530] {standard_task_runner.py:60} INFO - Started process 3282 to run task
+[2024-03-02T15:15:37.894+0530] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'weather_data_pipeline', 'wait_for_archive', 'manual__2024-03-02T09:45:36.036970+00:00', '--job-id', '197', '--raw', '--subdir', 'DAGS_FOLDER/Data_analysis.py', '--cfg-path', '/var/folders/th/tnjyp6yd1cj78nysn5t4jl6h0000gn/T/tmpd2ar70_m']
+[2024-03-02T15:15:37.895+0530] {standard_task_runner.py:88} INFO - Job 197: Subtask wait_for_archive
+[2024-03-02T15:15:37.910+0530] {task_command.py:423} INFO - Running <TaskInstance: weather_data_pipeline.wait_for_archive manual__2024-03-02T09:45:36.036970+00:00 [running]> on host aniks-macbook-air.local
+[2024-03-02T15:15:37.927+0530] {taskinstance.py:2510} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='weather_data_pipeline' AIRFLOW_CTX_TASK_ID='wait_for_archive' AIRFLOW_CTX_EXECUTION_DATE='2024-03-02T09:45:36.036970+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-03-02T09:45:36.036970+00:00'
+[2024-03-02T15:15:37.930+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:37.930+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:38.938+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:38.941+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:39.950+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:39.952+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:40.961+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:40.962+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:41.970+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:41.972+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:42.980+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:42.982+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:43.990+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:43.992+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:45.000+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:45.002+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:46.011+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:46.012+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:47.021+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:47.022+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:48.030+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:48.032+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:49.039+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:49.040+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:50.048+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:50.050+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:51.059+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:51.061+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:52.068+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:52.070+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:53.076+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:53.078+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:54.086+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:54.087+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:55.095+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:55.096+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:56.104+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:56.105+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:57.111+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:57.112+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:58.120+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:58.121+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:15:59.131+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:15:59.132+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:00.141+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:00.142+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:01.151+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:01.152+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:02.156+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:02.157+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:03.164+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:03.165+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:04.170+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:04.171+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:05.178+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:05.180+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:06.188+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:06.189+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:07.194+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:07.195+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:08.202+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:08.203+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:09.211+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:09.212+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:10.221+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:10.222+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:11.231+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:11.233+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:12.237+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:12.237+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:13.244+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:13.245+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:14.253+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:14.254+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:15.263+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:15.264+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:16.273+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:16.274+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:17.282+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:17.284+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:18.292+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:18.294+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:19.302+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:19.304+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:20.309+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:20.310+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:21.316+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:21.317+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:22.323+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:22.324+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:23.330+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:23.331+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:24.335+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:24.336+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:25.343+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:25.344+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:26.348+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:26.349+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:27.353+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:27.354+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:28.360+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:28.361+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:29.367+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:29.368+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:30.376+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:30.377+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:31.381+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:31.382+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:32.391+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:32.392+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:33.396+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:33.397+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:34.400+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:34.401+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:35.406+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:35.408+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:36.414+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:36.416+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:37.422+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:37.423+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:38.427+0530] {base.py:83} INFO - Using connection ID 'fs_default' for task execution.
+[2024-03-02T15:16:38.428+0530] {filesystem.py:66} INFO - Poking for file /path/to/archive.zip
+[2024-03-02T15:16:38.429+0530] {taskinstance.py:2728} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 444, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 414, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anikbhowmick/Python/Big_Data_Assignment/A02/airflow_env/lib/python3.11/site-packages/airflow/sensors/base.py", line 282, in execute
+    raise AirflowSensorTimeout(message)
+airflow.exceptions.AirflowSensorTimeout: Sensor has timed out; run duration of 60.50073195799996 seconds exceeds the specified timeout of 60.0.
+[2024-03-02T15:16:38.436+0530] {taskinstance.py:1149} INFO - Immediate failure requested. Marking task as FAILED. dag_id=weather_data_pipeline, task_id=wait_for_archive, execution_date=20240302T094536, start_date=20240302T094537, end_date=20240302T094638
+[2024-03-02T15:16:38.443+0530] {standard_task_runner.py:107} ERROR - Failed to execute job 197 for task wait_for_archive (Sensor has timed out; run duration of 60.50073195799996 seconds exceeds the specified timeout of 60.0.; 3282)
+[2024-03-02T15:16:38.480+0530] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2024-03-02T15:16:38.495+0530] {taskinstance.py:3309} INFO - 0 downstream tasks scheduled from follow-on schedule check
